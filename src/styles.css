@@ -1,1 +1,1060 @@
-/* You can add global styles to this file, and also import other style files */
+/* ==================================================
+   1. ШРИФТЫ
+   ================================================== */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/storage/static/fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/storage/static/fonts/Roboto-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/storage/static/fonts/Roboto-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==================================================
+   2. ПЕРЕМЕННЫЕ
+   ================================================== */
+
+:root {
+  --color-1: #ffffff;
+  --color-2: #000000;
+  --color-3: #F6F7F8;
+  --color-4: #A1A1A1;
+  --color-5: #CDCDCD;
+  --color-6: #FFDC26;
+  --color-7: rgb(230, 194, 0);
+  --color-8: #DE7921;
+  --color-9: #ededed;
+  --color-10: #e3e3e3;
+  --color-11: #ff9b00;
+  --color-12: #f1f1f1;
+  --color-13: #E7E7E7;
+  --color-14: #008000;
+  --color-15: #c20d38;
+  --color-16: #ffaf40;
+  --color-17: #ffb39b;
+  --color-18: #e2e2e2;
+  --color-19: #d4d4d4;
+  --color-20: #0000FF;
+  --color-22: rgb(220 252 231);
+  --color-23: rgb(219 234 254);
+  --color-24: #8B4513;
+  --color-27: #ffc9d6;
+  --color-28: rgb(255 255 255 / 0);
+  --color-29: #aaa9a3;;
+
+  --b-color-2: rgba(0, 93, 255, 0.05);
+  --b-color-1: rgba(186, 26, 26, 0.05);
+
+
+  --shadow-1: 0 0 0.8rem 0 rgb(96 125 139 / 56%);
+  --shadow-2: 0 0 0 0.2rem rgba(255, 155, 0, 0.5);
+}
+
+/* ==================================================
+   3. СБРОС И БАЗОВЫЕ СТИЛИ
+   ================================================== */
+
+h1 {
+  font-weight: 700;
+}
+
+.input,
+.focus-input:focus {
+  outline: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-2);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+html {
+  font-family: 'Roboto', Sans-Serif, Arial, serif;
+  font-size: 62.5%;
+  color: var(--color-2);
+  background-color: var(--color-1);
+  height: 100%;
+  width: 100%;
+  min-width: 32rem;
+  scroll-behavior: smooth
+}
+
+/* ==================================================
+   4. ОТОБРАЖЕНИЕ И FLEX
+   ================================================== */
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-1-2 {
+  flex: 1.2;
+}
+
+.flex-2-5 {
+  flex: 2.5;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-normal {
+  align-items: normal;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* ==================================================
+   5. ПОЗИЦИОНИРОВАНИЕ И ПОРЯДОК
+   ================================================== */
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed
+}
+
+.relative {
+  position: relative;
+}
+
+/* ==================================================
+   6. ВНУТРЕННИЕ ОТСТУПЫ
+   ================================================== */
+
+.padding-top-5 {
+  padding-top: 0.5rem;
+}
+
+.padding-7 {
+  padding: 0.7rem;
+}
+
+.padding-y-8-x-1 {
+  padding: 0.8rem 0.1rem 0.8rem 0.1rem;
+}
+
+.padding-10 {
+  padding: 1rem;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 1rem;
+}
+
+.padding-right-10 {
+  padding-right: 1rem;
+}
+
+.padding-right-bottom-10 {
+  padding: 0 1rem 1rem 0;
+}
+
+.padding-top-10 {
+  padding-top: 1rem;
+}
+
+.padding-x-13 {
+  padding: 0 1.3rem 0 1.3rem;
+}
+
+.padding-15 {
+  padding: 1.5rem;
+}
+
+.padding-left-15 {
+  padding-left: 1.5rem;
+}
+
+.padding-right-15 {
+  padding-right: 1.5rem;
+}
+
+.padding-right-15-bottom-5 {
+  padding: 0 1.5rem 0.5rem 0;
+}
+
+.padding-top-16 {
+  padding-top: 1.6rem;
+}
+
+.padding-x-17 {
+  padding: 0 1.7rem 0 1.7rem;
+}
+
+.padding-20 {
+  padding: 2rem;
+}
+
+.padding-bottom-only-20 {
+  padding: 0 0 2rem 0;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 2rem;
+}
+
+.padding-top-20 {
+  padding: 2rem 0 0 0;
+}
+
+.padding-y-20 {
+  padding: 2rem 0 2rem 0;
+}
+
+.padding-left-22 {
+  padding-left: 2.2rem;
+}
+
+.padding-24 {
+  padding: 2.4rem;
+}
+
+.padding-bottom-24 {
+  padding-bottom: 2.4rem;
+}
+
+.padding-top-24 {
+  padding-top: 2.4rem;
+}
+
+.padding-x-24 {
+  padding: 0 2.4rem 0 2.4rem;
+}
+
+.padding-left-30 {
+  padding-left: 3rem;
+}
+
+.padding-bottom-50 {
+  padding-bottom: 5rem;
+}
+
+.padding-y-50 {
+  padding: 5rem 0 5rem 0;
+}
+
+/* ==================================================
+   7. ВНЕШНИЕ ОТСТУПЫ
+   ================================================== */
+
+.margin-bottom-5 {
+  margin-bottom: 0.5rem;
+}
+
+.margin-right-5 {
+  margin-right: 0.5rem;
+}
+
+.margin-top-5 {
+  margin-top: 0.5rem;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 1rem;
+}
+
+.margin-left-10 {
+  margin-left: 1rem;
+}
+
+.margin-right-10 {
+  margin-right: 1rem;
+}
+
+.margin-top-10 {
+  margin-top: 1rem;
+}
+
+.margin-right-17 {
+  margin-right: 1.7rem;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 2rem;
+}
+
+.margin-left-20 {
+  margin-left: 2rem;
+}
+
+.margin-top-20 {
+  margin-top: 2rem;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 2.4rem;
+}
+
+.margin-right-40 {
+  margin-right: 4rem;
+}
+
+.margin-y-24 {
+  margin: 2.4rem 0;
+}
+
+/* ==================================================
+   8. РАССТОЯНИЯ МЕЖДУ ЭЛЕМЕНТАМИ
+   ================================================== */
+
+.gap-5 {
+  gap: 0.5rem;
+}
+
+.gap-10 {
+  gap: 1rem;
+}
+
+.gap-12 {
+  gap: 1.2rem;
+}
+
+.gap-15 {
+  gap: 1.5rem;
+}
+
+.gap-20 {
+  gap: 2rem;
+}
+
+.gap-30 {
+  gap: 3rem;
+}
+
+.gap-50 {
+  gap: 5rem;
+}
+
+/* ==================================================
+   9. ШИРИНА И ВЫСОТА
+   ================================================== */
+
+.font-size-10 {
+  font-size: 1rem;
+}
+
+.font-size-12 {
+  font-size: 1.2rem;
+}
+
+
+.font-size-16 {
+  font-size: 1.6rem;
+}
+
+.font-size-16-5 {
+  font-size: 1.65rem;
+}
+
+.font-size-18 {
+  font-size: 1.8rem;
+}
+
+.font-size-19 {
+  font-size: 1.9rem;
+}
+
+.font-size-20 {
+  font-size: 2rem;
+}
+
+.font-size-24 {
+  font-size: 2.4rem;
+}
+
+.font-size-28 {
+  font-size: 2.8rem;
+}
+
+.font-size-70 {
+  font-size: 7rem;
+}
+
+.min-width-40 {
+  min-width: 4rem;
+}
+
+.size-40 {
+  width: 4rem;
+  height: 4rem;
+}
+
+.min-size-48 {
+  min-width: 4.8rem;
+  min-height: 4.8rem;
+}
+
+.size-48 {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.height-50 {
+  height: 5rem;
+}
+
+.size-50 {
+  width: 5rem;
+  height: 5rem;
+}
+
+.height-60 {
+  height: 6rem;
+}
+
+.width-60 {
+  width: 6rem;
+}
+
+.height-80 {
+  height: 8rem;
+}
+
+.height-90 {
+  height: 9rem;
+}
+
+.size-120 {
+  width: 12rem;
+  height: 12rem;
+}
+
+.size-160 {
+  width: 16rem;
+  height: 16rem;
+}
+
+.height-200 {
+  height: 20rem;
+}
+
+.max-width-214 {
+  max-width: 21.4rem;
+}
+
+.min-width-256 {
+  min-width: 25.6rem;
+}
+
+.max-width-280 {
+  max-width: 28rem;
+}
+
+.min-width-280 {
+  min-width: 28rem;
+}
+
+.max-width-440 {
+  max-width: 44rem;
+}
+
+.max-width-600 {
+  max-width: 60rem;
+}
+
+.max-width-800 {
+  max-width: 80rem;
+}
+
+.max-width-991 {
+  max-width: 99.1rem;
+}
+
+.max-width-1400 {
+  max-width: 140rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.height-content {
+  height: max-content;
+}
+
+.height-full {
+  height: 100%;
+}
+
+.height-screen {
+  height: 100vh;
+}
+
+.min-width-content {
+  min-width: fit-content;
+}
+
+.width-content {
+  width: max-content;
+}
+
+.width-full {
+  width: 100%;
+}
+
+/* ==================================================
+   10. ТИПОГРАФИКА
+   ================================================== */
+
+.word-spacing-1 {
+  word-spacing: 0.1em;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 0.2rem;
+}
+
+.letter-spacing-4 {
+  letter-spacing: 4px;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.no-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: var(--color-1);
+}
+
+.text-muted {
+  color: var(--color-4);
+}
+
+
+.text-green {
+  color: var(--color-14);
+}
+
+.text-red {
+  color: var(--color-15);
+}
+
+.text-blue {
+  color: var(--color-20);
+}
+
+.text-grey-soft {
+  color: var(--color-29);
+}
+
+
+.wrap-anywhere {
+  overflow-wrap: anywhere;
+  /*overflow-wrap: break-word;*/
+  /*word-wrap: break-word;*/
+}
+
+.text-uppercase {
+  text-transform: uppercase
+}
+
+
+.line-height {
+  line-height: .98;
+}
+
+/* ==================================================
+   11. ЦВЕТА И ФОНЫ
+   ================================================== */
+
+.bg-transparent1, bg-transparent2 {
+  background-color: var(--color-28);
+  transition: background-color 0.3s ease;
+}
+
+.bg-yellow {
+  background-color: var(--color-6);
+}
+
+.bg-black {
+  background-color: var(--color-2);
+}
+
+.bg-blue-light {
+  background-color: var(--color-23);
+}
+
+.bg-blue-soft {
+  background-color: var(--b-color-2);
+}
+
+.bg-green-soft {
+  background-color: var(--color-22);
+}
+
+.bg-hover {
+  background-color: var(--color-1);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.bg-hover:hover {
+  background-color: var(--color-9);
+}
+
+.bg-light {
+  background-color: var(--color-12);
+}
+
+.bg-page {
+  background-color: var(--color-3);
+}
+
+.bg-red-soft {
+  background-color: var(--color-27);
+}
+
+.bg-white {
+  background-color: var(--color-1);
+}
+
+.bg-white-transition {
+  background-color: var(--color-1);
+  transition: background-color 0.2s ease;
+}
+
+.bg-yellow {
+  background-color: var(--color-6);
+}
+
+.bg-yellow-hover {
+  background-color: var(--color-6);
+  transition: background-color 0.3s ease;
+}
+
+.bg-yellow-hover:hover {
+  background-color: var(--color-7);
+}
+
+/* ==================================================
+   12. ГРАНИЦЫ И СКРУГЛЕНИЯ
+   ================================================== */
+
+.border-top-3 {
+  border-top: 0.3rem solid var(--color-5);
+}
+
+.radius-8 {
+  border-radius: 0.8rem;
+}
+
+.radius-10 {
+  border-radius: 1rem;
+}
+
+.radius-left-10 {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.radius-right-10 {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.radius-14 {
+  border-radius: 1.4rem;
+}
+
+.radius-25 {
+  border-radius: 2.5rem;
+}
+
+.radius-65 {
+  border-radius: 6.5rem;
+}
+
+.border-bottom {
+  border-bottom: 0.1rem solid var(--color-5);
+}
+
+.border-left {
+  border-left: 0.1rem solid var(--color-5);
+}
+
+.border-right {
+  border-right: 0.1rem solid var(--color-5);
+}
+
+.border-top {
+  border-top: 0.1rem solid var(--color-5);
+}
+
+.border-x {
+  border-left: 0.1rem solid var(--color-5);
+  border-right: 0.1rem solid var(--color-5);
+}
+
+.border-y {
+  border-top: 0.1rem solid var(--color-5);
+  border-bottom: 0.1rem solid var(--color-5);
+}
+
+/* ==================================================
+   13. ТЕНИ И ЭФФЕКТЫ
+   ================================================== */
+
+.pressable {
+  transition: transform 0.15s ease;
+}
+
+.pressable:active {
+  transform: translateY(-4px) scale(0.95);
+}
+
+.pressable:hover {
+  transform: translateY(-4px);
+}
+
+.shadow {
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+/* ==================================================
+   14. ИЗОБРАЖЕНИЯ И РАЗДЕЛИТЕЛИ
+   ================================================== */
+
+.divider {
+  border: none;
+  height: 0.2rem;
+  background-color: var(--color-5);
+  width: 100%;
+}
+
+.divider-light {
+  border: none;
+  height: 0.2rem;
+  background-color: var(--color-12);
+  width: 100%;
+}
+
+.image-square {
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: contain;
+}
+
+.star-rating {
+  fill: var(--color-8);
+}
+
+/* ==================================================
+   15. ЧЕКБОКС
+   ================================================== */
+
+.check:checked + .checkbox {
+  background-color: var(--color-6);
+  border-color: var(--color-6);
+  box-shadow: 0 0 0 0.2rem rgba(255, 155, 0, 0.5);
+}
+
+.check:checked + .checkbox .check-icon {
+  opacity: 1;
+}
+
+.check:checked + .checkbox:hover {
+  background-color: var(--color-6);
+  border-color: var(--color-6);
+}
+
+.checkbox {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  border: 0.1rem solid var(--color-11);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  transition: background-color 0.2s ease-in-out,
+  border-color 0.2s ease-in-out,
+  transform 0.2s ease-in-out,
+  box-shadow 0.3s ease-in-out;
+}
+
+.checkbox .check-icon {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.checkbox:hover {
+  background-color: var(--color-13);
+}
+
+/* ==================================================
+   16. КАРТОЧКА ТОВАРА
+   ================================================== */
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word; /* Чтобы длинные слова не ломали верстку */
+}
+
+.card {
+  /* Базовые стили карточки */
+  background: #fff;
+
+  /* Важно для плавности */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-left 0.3s ease;
+
+  /* Начальная легкая тень (чтобы блок не был плоским) */
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  /* Приподнимаем блок на 10px вверх */
+  transform: translateY(-0.8rem);
+
+  /* Делаем тень длиннее и мягче, создавая эффект отдаления от пола */
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+.card:hover .product-image {
+  transform: scale(1.1);
+}
+
+.product-image {
+  border-radius: 0.8rem;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+/* ==================================================
+   17. КНОПКИ
+   ================================================== */
+
+.button-danger {
+  display: flex;
+  border: 2px solid var(--color-15);
+  color: var(--color-15);
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  transition: background-color 0.2s ease;
+}
+
+.button-danger:hover {
+  background-color: var(--color-27);
+}
+
+.button-disabled {
+  display: flex;
+  background-color: var(--color-5);
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  transition: background-color 0.2s ease;
+}
+
+.button-orange {
+  display: flex;
+  background-color: var(--color-11);
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  transition: background-color 0.2s ease;
+}
+
+.button-orange:hover {
+  background-color: var(--color-16);
+}
+
+.button-outline {
+  color: var(--color-2);
+  background-color: var(--color-1);
+  border: 0.1rem solid var(--color-5);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button-outline:hover {
+  background-color: var(--color-9);
+}
+
+.button-padding {
+  padding: 1.2rem 2.4rem;
+}
+
+.button-primary {
+  display: flex;
+  background-color: var(--color-6);
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  transition: background-color 0.2s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--color-7);
+}
+
+/* ==================================================
+   18. ПАНЕЛИ
+   ================================================== */
+
+.panel {
+  border-left: 0.1rem solid var(--color-5);
+  box-shadow: 0 0 0.8rem 0 rgb(191 191 191 / 50%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.panel-bottom {
+  border-left: 0.1rem solid var(--color-5);
+  box-shadow: 0 0 0.8rem 0 rgb(191 191 191 / 50%);
+  border-radius: 0 0 2.4rem 2.4rem;
+  overflow: hidden;
+}
+
+.panel-middle {
+  box-shadow: 0 1px 1rem 0 rgb(191 191 191 / 50%);
+  clip-path: inset(0px -100% -100% -100%);
+}
+
+.panel-top {
+  box-shadow: 0 1px 1rem 0 rgb(191 191 191 / 50%);
+  border-radius: 2.4rem 2.4rem 0 0;
+  clip-path: inset(-100% -100% 0px -100%);
+}
+
+/* ==================================================
+   19. ФОРМЫ
+   ================================================== */
+
+.input-form {
+  height: 4rem;
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+  background-color: var(--color-18);
+  outline: none;
+  padding: 0 1rem 0 1rem;
+  border: 0.2rem solid transparent;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  font-size: 1.8rem;
+}
+
+.input-form:focus {
+  background-color: var(--color-1);
+  border: 0.2rem solid var(--color-11);
+}
+
+.input-form:hover {
+  background-color: var(--color-19);
+}
+
+/* ==================================================
+   20. ТАБЛИЦЫ
+   ================================================== */
+
+.table-collapse {
+  border-collapse: collapse;
+}
+
+/* ==================================================
+   21. ПРОЧИЕ ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ
+   ================================================== */
+
+
+.pointer {
+  cursor: pointer;
+}
