@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-c-benefits',
@@ -6,4 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './c-benefits.html',
   styleUrl: './c-benefits.css',
 })
-export class CBenefits {}
+export class CBenefits {
+  private router = inject(Router);
+
+  goToPage() {
+    this.router.navigate(['/dashboard']);
+  }
+}
