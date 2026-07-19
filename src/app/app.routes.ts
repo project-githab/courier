@@ -13,8 +13,21 @@ export const routes: Routes = [
   },
   {
     path: 'orders',
-    loadComponent: () => import('./private/pw-orders/pw-orders').then((m) => m.PwOrders),
-    pathMatch: 'full',
+    loadComponent: () => import('./private/orders/pw-orders/pw-orders').then((m) => m.PwOrders),
+    children: [
+      {
+        path: 'active',
+        loadComponent: () =>
+          import('./private/orders/active/pws-active/pws-active').then((m) => m.PwsActive),
+        pathMatch: 'full',
+      },
+      {
+        path: 'story',
+        loadComponent: () =>
+          import('./private/orders/active/pws-story/pws-story').then((m) => m.PwsStory),
+        pathMatch: 'full',
+      },
+    ],
   },
   {
     path: 'income',

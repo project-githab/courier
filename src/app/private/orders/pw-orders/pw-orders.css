@@ -1,0 +1,58 @@
+
+.orders {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.active {
+  font-weight: 700;
+  border-bottom: 0.2rem solid var(--color-8);
+  padding-bottom: 1rem;
+}
+
+.line {
+
+}
+
+.open-component {
+  display: none;
+}
+
+@media (min-width: 20em) {
+}
+
+/* Ноутбук 1199px */
+@media (max-width: 74.938em) {
+
+  .orders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+/* Планшет 991px */
+@media (max-width: 61.938em) {
+  .close-component {
+    display: none;
+  }
+}
+
+/* Телефон 767px */
+@media (max-width: 47.938em) {
+
+  .orders {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .close-link-component {
+    display: none;
+  }
+
+  .open-component {
+    display: flex;
+  }
+
+}
