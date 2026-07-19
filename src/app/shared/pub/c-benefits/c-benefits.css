@@ -13,28 +13,39 @@ em {
 .transport {
   position: absolute;
   z-index: 2;
-
   bottom: -1rem;
   right: -7.6rem;
+  transform: translate(-50%, -50%);
+}
 
-  display: flex;
+.car {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  background-color: white;
-
+.target-b {
+  position: absolute;
+  z-index: 2;
+  right: 15%;
+  bottom: 18%;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  color: white;
+  background-color: #000;
+  border-radius: 50%;
   transform: translate(-50%, -50%);
 }
 
 .name-user {
   position: absolute;
   z-index: 2;
-
   bottom: -3.5rem;
   left: 14.2rem;
-
-  display: flex;
-
-  background-color: white;
-
   transform: translate(-50%, -50%);
 }
 
@@ -42,19 +53,13 @@ em {
 .price {
   position: absolute;
   z-index: 2;
-
   top: 5.6rem;
   right: -9.7rem;
-
-  display: flex;
-
-  background-color: white;
-
   transform: translate(-50%, -50%);
 }
 
 
-.target {
+.target-a {
   position: absolute;
   z-index: 2;
 

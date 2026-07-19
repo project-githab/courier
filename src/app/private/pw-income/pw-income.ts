@@ -1,0 +1,14 @@
+import { Component } from '@angular/core';
+import { CpHeader } from '../../shared/private/cp-header/cp-header';
+import { CpPanel } from '../../shared/private/cp-panel/cp-panel';
+
+@Component({
+  selector: 'app-pw-income',
+  imports: [CpHeader, CpPanel],
+  templateUrl: './pw-income.html',
+  styleUrl: './pw-income.css',
+  host: {
+    class: 'flex flex-col height-screen',
+  },
+})
+export class PwIncome {}

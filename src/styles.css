@@ -56,7 +56,9 @@
   --color-24: #8B4513;
   --color-27: #ffc9d6;
   --color-28: rgb(255 255 255 / 0);
-  --color-29: #aaa9a3;;
+  --color-29: #aaa9a3;
+  --color-30: #2a2a27;
+  --color-31: #eff1ec;
 
   --b-color-2: rgba(0, 93, 255, 0.05);
   --b-color-1: rgba(186, 26, 26, 0.05);
@@ -135,6 +137,10 @@ html {
 
 .between {
   justify-content: space-between;
+}
+
+.items-flex-end {
+  align-items: flex-end;
 }
 
 .flex {
@@ -470,6 +476,21 @@ html {
   min-width: 4rem;
 }
 
+.size-10 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.size-30 {
+  width: 3rem;
+  height: 3rem;
+}
+
+.size-35 {
+  width: 3.4rem;
+  height: 3.5rem;
+}
+
 .size-40 {
   width: 4rem;
   height: 4rem;
@@ -526,6 +547,14 @@ html {
 
 .max-width-214 {
   max-width: 21.4rem;
+}
+
+.max-width-240 {
+  max-width: 24rem;
+}
+
+.min-width-240 {
+  min-width: 24rem;
 }
 
 .min-width-256 {
@@ -672,8 +701,24 @@ html {
   transition: background-color 0.3s ease;
 }
 
+.bg-muted {
+  background-color: var(--color-4);
+}
+
 .bg-yellow {
   background-color: var(--color-6);
+}
+
+.bg-orange {
+  background-color: var(--color-11);
+}
+
+.bg-black-soft {
+  background-color: var(--color-30);
+}
+
+.bg-linen {
+  background-color: var(--color-31);
 }
 
 .bg-black {
@@ -715,6 +760,10 @@ html {
 
 .bg-white {
   background-color: var(--color-1);
+}
+
+.bg-green {
+  background-color: var(--color-14);
 }
 
 .bg-white-transition {
@@ -771,8 +820,8 @@ html {
   border-radius: 2.5rem;
 }
 
-.radius-65 {
-  border-radius: 6.5rem;
+.radius-50p {
+  border-radius: 50%;
 }
 
 .border-bottom {

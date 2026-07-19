@@ -1,0 +1,232 @@
+/* Контейнер тумблера */
+.switch {
+  --switch-width: 4.6rem;
+  --switch-height: 2.4rem;
+  --slider-size: 1.8rem;
+
+  position: relative;
+  display: inline-block;
+  width: var(--switch-width);
+  height: var(--switch-height);
+}
+
+/* Скрываем дефолтный чекбокс */
+.switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Фон тумблера в выключенном состоянии */
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+  border-radius: var(--switch-height);
+}
+
+/* Круглый бегунок */
+.switch-slider::before {
+  content: "";
+  position: absolute;
+  height: var(--slider-size);
+  width: var(--slider-size);
+  left: 0.3rem;
+  bottom: 0.3rem;
+  background-color: white;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+/* Стили при включении (checked) */
+.switch-input:checked + .switch-slider {
+  background-color: #4cd964; /* Зеленый цвет активации */
+}
+
+/* Смещение бегунка вправо при включении */
+.switch-input:checked + .switch-slider::before {
+  transform: translateX(calc(var(--switch-width) - var(--slider-size) - 0.6rem));
+}
+
+/* Стили для фокуса (для доступности с клавиатуры) */
+.switch-input:focus-visible + .switch-slider {
+  outline: 0.2rem solid #007aff;
+  outline-offset: 0.2rem;
+}
+
+.grid-dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+
+.car {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.target-b {
+  position: absolute;
+  z-index: 2;
+  right: 15%;
+  bottom: 18%;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  color: white;
+  background-color: #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.target-a {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 40%;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  color: white;
+  background-color: #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.parent {
+  width: 100%;
+}
+
+.square {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #eff1ec;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.square::before,
+.square::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 141.5%;
+  height: 2rem;
+  background-color: #dfe2db;
+  transform-origin: center;
+}
+
+.square::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.square::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.circle {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  aspect-ratio: 1 / 1;
+  border: 1rem solid #FFDC26;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+
+
+.height-50-component {
+  height: 5rem;
+}
+
+.height-90-component {
+  height: 9rem;
+}
+
+.height-100-component {
+  height: 10rem;
+}
+
+.height-120-component {
+  height: 12rem;
+}
+
+.height-150-component {
+  height: 15rem;
+}
+
+.height-180-component {
+  height: 18rem;
+}
+
+.height-240-component {
+  height: 24rem;
+}
+
+/* Телефон от 320px "Этот breakpoint просто показывает в среде разработчика данную точку для удобства " */
+@media (min-width: 20em) {
+}
+
+/* Ноутбук 1199px */
+@media (max-width: 74.938em) {
+
+  .grid-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Планшет 991px */
+@media (max-width: 61.938em) {
+
+  .close-component {
+    display: none;
+  }
+
+
+}
+
+/* Телефон 767px */
+@media (max-width: 47.938em) {
+
+  .grid-dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .flex-col-component {
+    flex-direction: column;
+  }
+
+  .target-a {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .target-b {
+    width: 3rem;
+    height: 3rem;
+  }
+
+}

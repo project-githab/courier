@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+  <title id="title">Страница не найдена — ошибка 404</title>
+  <desc id="desc">Курьер SakhShop ищет потерянный адрес на карте рядом с посылкой</desc>
+
+  <style>
+    .route {
+      stroke-dasharray: 12 14;
+      animation: routeMove 1.5s linear infinite;
+    }
+
+    .pin {
+      transform-origin: 566px 126px;
+      animation: pinBounce 2.2s ease-in-out infinite;
+    }
+
+    .package {
+      transform-origin: 620px 362px;
+      animation: packageFloat 2.8s ease-in-out infinite;
+    }
+
+    .question {
+      animation: questionFade 2.2s ease-in-out infinite;
+    }
+
+    @keyframes routeMove {
+      to {
+        stroke-dashoffset: -52;
+      }
+    }
+
+    @keyframes pinBounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes packageFloat {
+      0%, 100% {
+        transform: translateY(0) rotate(0);
+      }
+      50% {
+        transform: translateY(-7px) rotate(1deg);
+      }
+    }
+
+    @keyframes questionFade {
+      0%, 100% {
+        opacity: .35;
+        transform: translateY(3px);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(-3px);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- Мягкая подложка-карта -->
+  <rect x="40" y="38" width="680" height="410" rx="38" fill="#f2f3ee" />
+  <path d="M55 155 190 86l112 60 130-74 119 63 154-78" fill="none" stroke="#e0e2dc" stroke-width="22" />
+  <path d="M74 356 196 270l116 50 132-91 119 70 141-94" fill="none" stroke="#e0e2dc" stroke-width="18" />
+  <path d="M153 48v400M352 42v402M590 42v398" fill="none" stroke="#e5e7e1" stroke-width="12" />
+
+  <!-- Прерванный маршрут -->
+  <path class="route" d="M151 347c62-65 104-92 173-102 63-9 116 10 165-22 38-25 46-55 68-86" fill="none"
+        stroke="#ffdc26" stroke-width="9" stroke-linecap="round" />
+  <circle cx="151" cy="347" r="20" fill="#11110f" />
+  <text x="151" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700"
+        fill="#fff">A
+  </text>
+
+  <!-- Точка назначения -->
+  <g class="pin">
+    <path d="M566 84c-25 0-45 20-45 45 0 34 45 76 45 76s45-42 45-76c0-25-20-45-45-45Z" fill="#ffdc26" />
+    <circle cx="566" cy="128" r="18" fill="#11110f" />
+    <path d="m558 120 16 16m0-16-16 16" stroke="#fff" stroke-width="5" stroke-linecap="round" />
+  </g>
+
+  <!-- Крупные цифры -->
+  <g font-family="Arial, sans-serif" font-weight="900" fill="#11110f">
+    <text x="88" y="205" font-size="132">4</text>
+    <text x="224" y="205" font-size="132" fill="#ffdc26" stroke="#11110f" stroke-width="5">0</text>
+    <text x="373" y="205" font-size="132">4</text>
+  </g>
+
+  <!-- Курьер -->
+  <g transform="translate(226 251)">
+    <circle cx="69" cy="35" r="26" fill="#f2b38c" />
+    <path d="M45 34c2-25 16-38 31-35 11 2 22 12 22 29-17-2-34-10-45-20-1 9-4 18-8 26Z" fill="#11110f" />
+    <path d="M36 129c2-43 10-71 34-72 29-1 43 33 44 74Z" fill="#11110f" />
+    <rect x="57" y="70" width="42" height="26" rx="6" fill="#ffdc26" />
+    <text x="78" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700"
+          fill="#11110f">SakhShop
+    </text>
+    <path d="M43 79 3 118m105-37 41 28" fill="none" stroke="#f2b38c" stroke-width="15" stroke-linecap="round" />
+    <path d="m48 126-18 70m66-70 26 70" fill="none" stroke="#11110f" stroke-width="18" stroke-linecap="round" />
+    <path d="M15 196h35m55 0h37" stroke="#ffdc26" stroke-width="12" stroke-linecap="round" />
+    <g class="question" font-family="Arial, sans-serif" font-size="32" font-weight="800" fill="#11110f">
+      <text x="-6" y="67">?</text>
+      <text x="128" y="48">?</text>
+    </g>
+  </g>
+
+  <!-- Посылка -->
+  <g class="package">
+    <path d="m574 333 47-23 62 30-49 25Z" fill="#ffec86" />
+    <path d="m574 333 60 32v70l-60-34Z" fill="#ffdc26" />
+    <path d="m634 365 49-25v68l-49 27Z" fill="#e8bd00" />
+    <path d="m604 319 61 30" stroke="#11110f" stroke-width="5" opacity=".55" />
+    <rect x="586" y="355" width="35" height="24" rx="4" fill="#fff" />
+    <path d="M593 362h20m-20 6h14" stroke="#11110f" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Подпись -->
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="380" y="470" font-size="22" font-weight="700" fill="#11110f">Кажется, этот адрес потерялся</text>
+    <text x="380" y="487" font-size="14" fill="#747570">Но курьер уже ищет правильный маршрут</text>
+  </g>
+</svg>
