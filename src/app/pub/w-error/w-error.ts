@@ -5,5 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './w-error.html',
   styleUrl: './w-error.css',
+  standalone: true,
 })
 export class WError {}

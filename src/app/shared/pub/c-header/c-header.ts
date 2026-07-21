@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   imports: [],
   templateUrl: './c-header.html',
   styleUrl: './c-header.css',
+  standalone: true,
 })
 export class CHeader {
   private router = inject(Router);

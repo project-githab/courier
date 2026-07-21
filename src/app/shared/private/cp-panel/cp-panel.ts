@@ -6,5 +6,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './cp-panel.html',
   styleUrl: './cp-panel.css',
+  standalone: true,
 })
 export class CpPanel {}

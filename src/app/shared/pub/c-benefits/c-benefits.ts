@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   imports: [],
   templateUrl: './c-benefits.html',
   styleUrl: './c-benefits.css',
+  standalone: true,
 })
 export class CBenefits {
   private router = inject(Router);

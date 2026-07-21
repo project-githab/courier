@@ -267,6 +267,10 @@ html {
   padding-right: 1.5rem;
 }
 
+.padding-right-20 {
+  padding-right: 2rem;
+}
+
 .padding-right-15-bottom-5 {
   padding: 0 1.5rem 0.5rem 0;
 }
@@ -377,6 +381,10 @@ html {
 
 .margin-top-20 {
   margin-top: 2rem;
+}
+
+.margin-top-30 {
+  margin-top: 3rem;
 }
 
 .margin-top-70 {
@@ -703,6 +711,10 @@ html {
 .bg-transparent1, bg-transparent2 {
   background-color: var(--color-28);
   transition: background-color 0.3s ease;
+}
+
+.bg-gray {
+  background-color: var(--color-5);
 }
 
 .bg-muted {

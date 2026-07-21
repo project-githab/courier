@@ -13,18 +13,18 @@ export const routes: Routes = [
   },
   {
     path: 'orders',
-    loadComponent: () => import('./private/orders/pw-orders/pw-orders').then((m) => m.PwOrders),
+    loadComponent: () =>
+      import('./private/orders/pw-order-main/pw-order-main').then((m) => m.PwOrderMain),
     children: [
       {
         path: 'active',
         loadComponent: () =>
-          import('./private/orders/active/pws-active/pws-active').then((m) => m.PwsActive),
+          import('./private/orders/pw-active/pws-active').then((m) => m.PwsActive),
         pathMatch: 'full',
       },
       {
         path: 'story',
-        loadComponent: () =>
-          import('./private/orders/active/pws-story/pws-story').then((m) => m.PwsStory),
+        loadComponent: () => import('./private/orders/pw-story/pws-story').then((m) => m.PwsStory),
         pathMatch: 'full',
       },
     ],

@@ -7,5 +7,6 @@ import { CBenefits } from '../../shared/pub/c-benefits/c-benefits';
   imports: [CHeader, CBenefits],
   templateUrl: './w-home.html',
   styleUrl: './w-home.css',
+  standalone: true,
 })
 export class WHome {}

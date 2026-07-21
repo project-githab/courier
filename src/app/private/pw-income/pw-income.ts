@@ -10,5 +10,6 @@ import { CpPanel } from '../../shared/private/cp-panel/cp-panel';
   host: {
     class: 'flex flex-col height-screen',
   },
+  standalone: true,
 })
 export class PwIncome {}

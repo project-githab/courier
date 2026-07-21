@@ -1,0 +1,56 @@
+<div class="flex bg-linen flex-grow">
+
+  <app-cp-panel class="close-component"></app-cp-panel>
+
+  <div class="flex flex-col width-full">
+
+    <app-cp-header class="bg-white"></app-cp-header>
+
+    <div class="flex width-full justify-center">
+
+      <div class="flex padding-24 max-width-1400 width-full flex-col">
+
+
+        <div class="flex font-size-18 close-link-component">
+
+          <div class="flex pointer" routerLink="/orders" routerLinkActive="active"
+               [routerLinkActiveOptions]="{ exact: true }">
+            <div class="flex">Доступные</div>
+            <div class="flex margin-left-10">3</div>
+          </div>
+
+          <div class="flex pointer margin-left-20" routerLink="/orders/active" routerLinkActive="active">
+            <div class="flex">Активные</div>
+          </div>
+
+          <div class="flex pointer margin-left-20" routerLink="/orders/story" routerLinkActive="active">История</div>
+
+        </div>
+
+        <div class="flex font-size-18 open-component between">
+          <div class="flex font-weight-700">Доступные</div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg>
+        </div>
+
+
+        @if (isOrdersPage()) {
+          <app-pw-orders></app-pw-orders>
+        } @else if (isActiveOrdersPage()) {
+          <app-pw-active></app-pw-active>
+        } @else if (isStoryPage()) {
+          <app-pw-story></app-pw-story>
+        }
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
