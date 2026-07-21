@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PwSchedule } from './pw-schedule';
+import { PwFinance } from './pw-finance';
 
-describe('PwSchedule', () => {
-  let component: PwSchedule;
-  let fixture: ComponentFixture<PwSchedule>;
+describe('PwFinance', () => {
+  let component: PwFinance;
+  let fixture: ComponentFixture<PwFinance>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PwSchedule],
+      imports: [PwFinance],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PwSchedule);
+    fixture = TestBed.createComponent(PwFinance);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

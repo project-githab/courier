@@ -20,10 +20,10 @@
 
             <div class="flex flex-col margin-left-10">
               @if (isActive()) {
-                <div class="flex font-size-20 font-weight-700">Вы на линии</div>
-                <div class="flex font-size-16">Ищем подходящие заказы рядом</div>
+                <div class="flex font-size-20 font-weight-700">Сахалин Экспресс принимает заказы</div>
+                <div class="flex font-size-16">12 курьеров сейчас на линии</div>
               } @else {
-                <div class="flex font-size-20 font-weight-700">Вы не на линии</div>
+                <div class="flex font-size-20 font-weight-700">Сахалин Экспресс не принимает заказы</div>
               }
 
             </div>
@@ -47,26 +47,26 @@
 
           <div class="flex bg-white radius-10 padding-10 flex-col">
             <div class="flex">Сегодня</div>
-            <div class="flex font-size-24 font-weight-700 margin-top-20">3 840 ₽</div>
-            <div class="flex margin-top-20">12% за неделю</div>
+            <div class="flex font-size-24 font-weight-700 margin-top-20">12 480 ₽₽</div>
+            <div class="flex margin-top-20">Доход компании</div>
           </div>
 
           <div class="flex bg-white radius-10 padding-10 flex-col">
             <div class="flex">Доставок</div>
-            <div class="flex font-size-24 font-weight-700 margin-top-20">8</div>
-            <div class="flex margin-top-20">Среднее — 31 мин</div>
+            <div class="flex font-size-24 font-weight-700 margin-top-20">18</div>
+            <div class="flex margin-top-20">3 выполняются</div>
           </div>
 
           <div class="flex bg-white radius-10 padding-10 flex-col">
             <div class="flex">На линии</div>
-            <div class="flex font-size-24 font-weight-700 margin-top-20">4 ч 20 мин</div>
-            <div class="flex margin-top-20">План: 6 часов</div>
+            <div class="flex font-size-24 font-weight-700 margin-top-20">12</div>
+            <div class="flex margin-top-20">из 16 курьеров</div>
           </div>
 
           <div class="flex bg-white radius-10 padding-10 flex-col">
             <div class="flex">Рейтинг</div>
             <div class="flex font-size-24 font-weight-700 margin-top-20">4.96 ★</div>
-            <div class="flex margin-top-20">387 оценок</div>
+            <div class="flex margin-top-20">428 оценок</div>
           </div>
 
         </div>
@@ -75,13 +75,23 @@
         <div class="flex margin-top-10 gap-10 flex-col-component">
 
 
-          <div class="flex flex-1-2 bg-white radius-10 flex-col padding-10">
+          <div class="flex flex-1-5 bg-white radius-10 flex-col padding-10">
 
-            <div class="flex font-size-20 font-weight-700 between flex-col-component">
-              <div class="flex">Заказ рядом с вами:</div>
-              <div class="flex">860 ₽</div>
+            <div class="flex font-size-20 flex-col-component flex-col">
+              <div class="flex font-weight-700">Новые заказы</div>
+              <div class="flex between font-size-16">
+                <div class="flex margin-top-10">Доставьте продукты покупателю</div>
+                <div class="flex margin-top-10">
+                  <div class="flex items-center justify-center">Все заказы</div>
+                  <div class="flex items-center justify-center margin-left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                         fill="#000000">
+                      <path d="m440-200 137-240H80v-80h497L440-760l440 280-440 280Z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="flex font-size-16">Доставьте продукты покупателю</div>
 
 
             <div class="flex margin-top-20">

@@ -3,13 +3,13 @@ import { CpHeader } from '../../shared/private/cp-header/cp-header';
 import { CpPanel } from '../../shared/private/cp-panel/cp-panel';
 
 @Component({
-  selector: 'app-pw-income',
+  selector: 'app-pw-company',
   imports: [CpHeader, CpPanel],
-  templateUrl: './pw-income.html',
-  styleUrl: './pw-income.css',
+  templateUrl: './pw-company.html',
+  styleUrl: './pw-company.css',
   host: {
     class: 'flex flex-col height-screen',
   },
   standalone: true,
 })
-export class PwIncome {}
+export class PwCompany {}

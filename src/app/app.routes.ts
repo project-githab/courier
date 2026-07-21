@@ -30,18 +30,23 @@ export const routes: Routes = [
     ],
   },
   {
-    path: 'income',
-    loadComponent: () => import('./private/pw-income/pw-income').then((m) => m.PwIncome),
+    path: 'couriers',
+    loadComponent: () => import('./private/pw-couriers/pw-couriers').then((m) => m.PwCouriers),
     pathMatch: 'full',
   },
   {
-    path: 'schedule',
-    loadComponent: () => import('./private/pw-schedule/pw-schedule').then((m) => m.PwSchedule),
+    path: 'transport',
+    loadComponent: () => import('./private/pw-transport/pw-transport').then((m) => m.PwTransport),
     pathMatch: 'full',
   },
   {
-    path: 'profile',
-    loadComponent: () => import('./private/pw-profile/pw-profile').then((m) => m.PwProfile),
+    path: 'finance',
+    loadComponent: () => import('./private/pw-finance/pw-finance').then((m) => m.PwFinance),
+    pathMatch: 'full',
+  },
+  {
+    path: 'company',
+    loadComponent: () => import('./private/pw-company/pw-company').then((m) => m.PwCompany),
     pathMatch: 'full',
   },
   {

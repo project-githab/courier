@@ -1,15 +1,4 @@
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 0.8fr 1fr 1fr;
-  gap: 1rem;
-}
-
-
-em {
-  font-style: normal;
-}
-
 .transport {
   position: absolute;
   z-index: 2;
@@ -54,7 +43,7 @@ em {
   position: absolute;
   z-index: 2;
   top: 5.6rem;
-  right: -9.7rem;
+  right: -13.2rem;
   transform: translate(-50%, -50%);
 }
 
@@ -126,9 +115,6 @@ em {
   transform: translate(-50%, -50%);
 }
 
-.padding-20-component {
-  padding: 2rem;
-}
 
 .font-size-20-component {
   font-size: 2rem;
@@ -159,17 +145,14 @@ em {
 
   .price {
     top: 4.8rem;
-    right: -7.7rem;
+    right: -11.1rem;
   }
 
   .name-user {
-    bottom: -3.5rem;
-    left: 11.6rem;
+    bottom: -2.2rem;
+    left: 12.2rem;
   }
 
-  .padding-20-component {
-    padding: 1rem;
-  }
 
   .font-size-20-component {
     font-size: 1.8rem;
@@ -192,18 +175,11 @@ em {
 /* Планшет 991px */
 @media (max-width: 61.938em) {
 
-  .header-nav-close-tablet {
-    display: none;
-  }
 
   .flex-col-component {
     flex-direction: column;
   }
 
-
-  .padding-20-component {
-    padding: 2rem;
-  }
 
   .font-size-20-component {
     font-size: 2rem;
@@ -223,12 +199,13 @@ em {
 
   .price {
     top: 5.7rem;
-    right: -9.7rem;
+    right: -13.2rem;
   }
 
 
   .name-user {
-    left: 14.5rem;
+    left: 14.4rem;
+    bottom: -3rem;
   }
 
 }
@@ -266,11 +243,11 @@ em {
 
   .price {
     top: 3.8rem;
-    right: -6.6rem;
+    right: -9.3rem;
   }
 
   .name-user {
-    bottom: -2.7rem;
+    bottom: -1.9rem;
     left: 9.8rem;
   }
 
@@ -278,11 +255,6 @@ em {
     bottom: -8rem;
     right: -1.7rem;
   }
-
-  .padding-20-component {
-    padding: 0.5rem;
-  }
-
 
   .padding-15-component {
     padding: 0.8rem;

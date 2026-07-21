@@ -6,8 +6,9 @@ export const serverRoutes: ServerRoute[] = [
   { path: 'orders', renderMode: RenderMode.Client },
   { path: 'orders/active', renderMode: RenderMode.Client },
   { path: 'orders/story', renderMode: RenderMode.Client },
-  { path: 'income', renderMode: RenderMode.Client },
-  { path: 'schedule', renderMode: RenderMode.Client },
-  { path: 'profile', renderMode: RenderMode.Client },
+  { path: 'couriers', renderMode: RenderMode.Client },
+  { path: 'transport', renderMode: RenderMode.Client },
+  { path: 'finance', renderMode: RenderMode.Client },
+  { path: 'company', renderMode: RenderMode.Client },
   { path: '**', renderMode: RenderMode.Prerender },
 ];

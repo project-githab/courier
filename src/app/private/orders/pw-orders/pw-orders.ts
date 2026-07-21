@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { CpHeader } from '../../../shared/private/cp-header/cp-header';
-import { CpPanel } from '../../../shared/private/cp-panel/cp-panel';
 
 @Component({
   selector: 'app-pw-orders',

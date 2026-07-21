@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PwProfile } from './pw-profile';
+import { PwCouriers } from './pw-couriers';
 
-describe('PwProfile', () => {
-  let component: PwProfile;
-  let fixture: ComponentFixture<PwProfile>;
+describe('PwCouriers', () => {
+  let component: PwCouriers;
+  let fixture: ComponentFixture<PwCouriers>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PwProfile],
+      imports: [PwCouriers],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PwProfile);
+    fixture = TestBed.createComponent(PwCouriers);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

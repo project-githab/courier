@@ -1,8 +1,9 @@
-.bg-black-black-component {
+
+.bg-black-component {
   background-color: var(--color-2);
 }
 
-.bg-black-black-component:hover {
+.bg-black-component:hover {
   background-color: var(--color-30);
 }
 
