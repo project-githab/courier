@@ -29,11 +29,31 @@ export const routes: Routes = [
       },
     ],
   },
+
   {
     path: 'couriers',
-    loadComponent: () => import('./private/pw-couriers/pw-couriers').then((m) => m.PwCouriers),
-    pathMatch: 'full',
+    loadComponent: () =>
+      import('./private/couriers/pw-couriers-main/pw-couriers-main').then((m) => m.PwCouriersMain),
+    children: [
+      {
+        path: 'free',
+        loadComponent: () => import('./private/couriers/pw-free/pw-free').then((m) => m.PwFree),
+        pathMatch: 'full',
+      },
+      {
+        path: 'delivery',
+        loadComponent: () =>
+          import('./private/couriers/pw-delivery/pw-delivery').then((m) => m.PwDelivery),
+        pathMatch: 'full',
+      },
+      {
+        path: 'line',
+        loadComponent: () => import('./private/couriers/pw-line/pw-line').then((m) => m.PwLine),
+        pathMatch: 'full',
+      },
+    ],
   },
+
   {
     path: 'transport',
     loadComponent: () => import('./private/pw-transport/pw-transport').then((m) => m.PwTransport),
