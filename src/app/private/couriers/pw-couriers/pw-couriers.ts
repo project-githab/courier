@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './pw-couriers.html',
   styleUrl: './pw-couriers.css',
+  host: {
+    class: 'flex flex-col height-screen width-full',
+  },
   standalone: true,
 })
 export class PwCouriers {}

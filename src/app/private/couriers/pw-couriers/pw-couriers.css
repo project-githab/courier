@@ -1,0 +1,5 @@
+.user-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.3fr 0.3fr 0.15fr 0.1fr;
+  gap: 1rem;
+}

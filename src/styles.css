@@ -147,6 +147,10 @@ html {
   display: flex;
 }
 
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -845,6 +849,14 @@ html {
   border-radius: 0 1rem 1rem 0;
 }
 
+.radius-top-10 {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.radius-bottom-10 {
+  border-radius: 0 0 1rem 1rem;
+}
+
 .radius-14 {
   border-radius: 1.4rem;
 }
@@ -861,7 +873,7 @@ html {
   border-bottom: 0.1rem solid var(--color-5);
 }
 
-.border-left {
+.border-left-1 {
   border-left: 0.1rem solid var(--color-5);
 }
 
