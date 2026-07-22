@@ -1,3 +1,50 @@
+
+.line-order {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Трек для полоски */
+.bar-track {
+  width: 100%;
+  height: 8px;
+  background-color: transparent; /* Если нужен фоновый серый трек, можно задать e.g. #f0f0f0 */
+  border-radius: 4px;
+}
+
+/* Сама желтая полоска */
+.bar-fill {
+  height: 100%;
+  background-color: #ffd600; /* Желтый цвет как на макете */
+  border-radius: 4px;
+  transition: width 0.3s ease; /* Плавная анимация при изменении размера */
+}
+
+
+.order-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+  gap: 2rem;
+}
+
 /* Контейнер тумблера */
 .switch {
   --switch-width: 4.6rem;
@@ -67,121 +114,6 @@
 }
 
 
-.car {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.target-b {
-  position: absolute;
-  z-index: 2;
-  right: 15%;
-  bottom: 18%;
-  align-items: center;
-  justify-content: center;
-  width: 4rem;
-  height: 4rem;
-  color: white;
-  background-color: #000;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.target-a {
-  position: absolute;
-  z-index: 2;
-  top: 30%;
-  left: 40%;
-  align-items: center;
-  justify-content: center;
-  width: 4rem;
-  height: 4rem;
-  color: white;
-  background-color: #000;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.parent {
-  width: 100%;
-}
-
-.square {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  background-color: #eff1ec;
-  overflow: hidden;
-  border-radius: 1rem;
-}
-
-.square::before,
-.square::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 141.5%;
-  height: 2rem;
-  background-color: #dfe2db;
-  transform-origin: center;
-}
-
-.square::before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.square::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.circle {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  width: 60%;
-  aspect-ratio: 1 / 1;
-  border: 1rem solid #FFDC26;
-  border-radius: 50%;
-  box-sizing: border-box;
-  transform: translate(-50%, -50%);
-}
-
-
-.height-50-component {
-  height: 5rem;
-}
-
-.height-90-component {
-  height: 9rem;
-}
-
-.height-100-component {
-  height: 10rem;
-}
-
-.height-120-component {
-  height: 12rem;
-}
-
-.height-150-component {
-  height: 15rem;
-}
-
-.height-180-component {
-  height: 18rem;
-}
-
-.height-240-component {
-  height: 24rem;
-}
-
 /* Телефон от 320px "Этот breakpoint просто показывает в среде разработчика данную точку для удобства " */
 @media (min-width: 20em) {
 }
@@ -217,16 +149,6 @@
 
   .flex-col-component {
     flex-direction: column;
-  }
-
-  .target-a {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .target-b {
-    width: 3rem;
-    height: 3rem;
   }
 
 }

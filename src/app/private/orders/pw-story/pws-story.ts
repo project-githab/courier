@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './pws-story.html',
   styleUrl: './pws-story.css',
+  host: {
+    class: 'flex flex-col',
+  },
   standalone: true,
 })
 export class PwsStory {}

@@ -1,18 +1,21 @@
 <div class="flex height-90 padding-20 items-center between">
 
   <div class="flex flex-col">
-    <div class="flex font-size-24 font-weight-700 close-component">Привет, Алексей!</div>
+    <div class="flex font-size-24 font-weight-700 close-component">{{ pageInfo.title }}</div>
 
     <div class="flex margin-top-5 font-size-18 flex-col-component">
-      <div class="flex">Воскресенье,</div>
-      <div class="flex margin-left-10-component">12 июля</div>
+      <div class="flex">{{ pageInfo.subtitle1 }}</div>
+      <div class="flex margin-left-10-component">{{ pageInfo.subtitle2 }}</div>
     </div>
 
   </div>
 
-  <div class="flex font-size-18 font-weight-700">
-    <div class="flex padding-5 bg-yellow radius-50p size-35 justify-center items-center">А</div>
-    <div class="flex margin-left-10 items-center">Алексей</div>
+  <div class="flex font-size-18">
+    <div class="flex padding-24 bg-yellow radius-50p size-35 justify-center items-center font-weight-700">АЛ</div>
+    <div class="flex margin-left-10 flex-col justify-center">
+      <div class="flex font-weight-700">Алексей Иванов</div>
+      <div class="flex font-size-16">Директор</div>
+    </div>
   </div>
 
 </div>

@@ -1,6 +1,6 @@
 <div class="flex bg-linen flex-grow">
 
-  <app-cp-panel class="close-component"></app-cp-panel>
+  <app-cp-panel class="close-component" [isActive]="isActive()"></app-cp-panel>
 
   <div class="flex flex-col width-full">
 
@@ -18,12 +18,12 @@
               <div class="flex size-10 radius-50p" [class.bg-green]="isActive()" [class.bg-muted]="!isActive()"></div>
             </div>
 
-            <div class="flex flex-col margin-left-10">
+            <div class="flex flex-col margin-left-10 height-70 justify-center">
               @if (isActive()) {
-                <div class="flex font-size-20 font-weight-700">Сахалин Экспресс принимает заказы</div>
-                <div class="flex font-size-16">12 курьеров сейчас на линии</div>
+                <div class="flex font-size-20 font-weight-700">Принимаем заказы</div>
+                <div class="flex font-size-16">На линии 12 курьеров</div>
               } @else {
-                <div class="flex font-size-20 font-weight-700">Сахалин Экспресс не принимает заказы</div>
+                <div class="flex font-size-20 font-weight-700">Не принимаем заказы</div>
               }
 
             </div>
@@ -75,13 +75,13 @@
         <div class="flex margin-top-10 gap-10 flex-col-component">
 
 
-          <div class="flex flex-1-5 bg-white radius-10 flex-col padding-10">
+          <div class="flex flex-2-5 bg-white radius-10 flex-col padding-10">
 
             <div class="flex font-size-20 flex-col-component flex-col">
               <div class="flex font-weight-700">Новые заказы</div>
               <div class="flex between font-size-16">
                 <div class="flex margin-top-10">Доставьте продукты покупателю</div>
-                <div class="flex margin-top-10">
+                <div routerLink="/orders" class="flex margin-top-10 pointer">
                   <div class="flex items-center justify-center">Все заказы</div>
                   <div class="flex items-center justify-center margin-left-10">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -93,50 +93,114 @@
               </div>
             </div>
 
-
-            <div class="flex margin-top-20">
-
-              <div class="parent">
-
-                <div class="square">
-                  <div class="circle"></div>
-                  <div class="flex target-a font-weight-700 font-size-20 items-center justify-center">А</div>
-
-                  <div class="flex car font-size-28">🚗</div>
-
-
-                  <div class="flex target-b font-weight-700 font-size-20 items-center justify-center">Б</div>
-
-                </div>
-
-              </div>
-
-            </div>
-
             <div class="flex flex-col margin-top-20">
 
-              <div class="flex margin-top-20">
-                <div class="flex font-weight-700 button-outline size-40 radius-50p justify-center items-center">А</div>
-                <div class="flex font-size-16 flex-col margin-left-10">
-                  <div class="flex">Забрать</div>
-                  <div class="flex margin-top-10 font-size-18 font-weight-700">Супермаркет «Столичный»</div>
-                  <div class="flex margin-top-10">ул. Комсомольская, 241Б</div>
+              <div class="order-grid line-order">
+
+                <div class="flex">
+
+                  <div class="flex font-size-16 flex-col">
+                    <div class="flex font-size-18 font-weight-700">Забрать</div>
+                    <div class="flex margin-top-10">ТЦ «Сити Молл»</div>
+                    <div class="flex margin-top-10">ул. Пушкина, 241Б</div>
+                  </div>
+
                 </div>
+
+                <div class="flex">
+
+                  <div class="flex font-size-16 flex-col">
+                    <div class="flex font-size-18 font-weight-700">Доставить</div>
+                    <div class="flex margin-top-10 flex-col">
+                      <div class="flex">ул. Есенина, 15</div>
+                      <div class="flex margin-top-10">п2 - кв. 555</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="flex justify-center">
+                  <div class="flex font-size-18 font-weight-700 items-center">1 240 ₽</div>
+                </div>
+
+                <div class="flex justify-center items-center">
+                  <div class="flex button-primary height-content padding-button">Принять</div>
+                </div>
+
               </div>
 
-              <div class="flex margin-top-20">
-                <div class="flex font-weight-700 button-outline size-40 radius-50p justify-center items-center">Б</div>
-                <div class="flex font-size-16 flex-col margin-left-10">
-                  <div class="flex">Доставить</div>
-                  <div class="flex margin-top-10 font-size-18 font-weight-700">ул. Горная, 12</div>
-                  <div class="flex margin-top-10">Подъезд 2 · 4,2 км</div>
+              <div class="order-grid margin-top-30 line-order">
+
+                <div class="flex">
+
+                  <div class="flex font-size-16 flex-col">
+                    <div class="flex font-size-18 font-weight-700">Забрать</div>
+                    <div class="flex margin-top-10">Столичный</div>
+                    <div class="flex margin-top-10">ул. Комсомольская, 241Б</div>
+                  </div>
+
                 </div>
+
+
+                <div class="flex">
+
+                  <div class="flex font-size-16 flex-col">
+                    <div class="flex font-size-18 font-weight-700">Доставить</div>
+                    <div class="flex margin-top-10 flex-col">
+                      <div class="flex">ул. Есенина, 15</div>
+                      <div class="flex margin-top-10">п2 - кв. 555</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="flex justify-center">
+                  <div class="flex font-size-18 font-weight-700 items-center">860 ₽</div>
+                </div>
+
+                <div class="flex justify-center items-center">
+                  <div class="flex button-primary height-content padding-button">Принять</div>
+                </div>
+
+              </div>
+
+              <div class="order-grid margin-top-30">
+
+                <div class="flex">
+
+                  <div class="flex font-size-16 flex-col">
+                    <div class="flex font-size-18 font-weight-700">Забрать</div>
+                    <div class="flex margin-top-10">Мегаберёзка</div>
+                    <div class="flex margin-top-10">пр. Мира, 420</div>
+                  </div>
+
+                </div>
+
+
+                <div class="flex">
+
+                  <div class="flex font-size-16 flex-col">
+                    <div class="flex font-size-18 font-weight-700">Доставить</div>
+                    <div class="flex margin-top-10 flex-col">
+                      <div class="flex">ул. Есенина, 15</div>
+                      <div class="flex margin-top-10">п2 - кв. 555</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="flex justify-center">
+                  <div class="flex font-size-18 font-weight-700 items-center">1 540₽</div>
+                </div>
+
+                <div class="flex justify-center items-center">
+                  <div class="flex button-primary height-content padding-button">Принять</div>
+                </div>
+
               </div>
 
             </div>
 
-            <div class="flex margin-top-20 button-primary pointer font-size-18 font-weight-700">Принять заказ : 860 ₽
-            </div>
 
           </div>
 
@@ -145,29 +209,55 @@
 
             <div class="flex bg-white padding-10 radius-10 flex-col">
 
-              <div class="flex font-size-20 font-weight-700">Эта неделя</div>
+              <div class="flex between items-center">
 
-              <div class="flex items-flex-end gap-10 margin-top-20">
-                <div class="flex width-full height-full height-90-component f1 bg-linen"></div>
-                <div class="flex width-full height-full height-120-component f1 bg-linen"></div>
-                <div class="flex width-full height-full height-50-component f1 bg-linen"></div>
-                <div class="flex width-full height-full height-180-component f1 bg-linen"></div>
-                <div class="flex width-full height-full height-150-component f1 bg-linen"></div>
-                <div class="flex width-full height-full height-240-component f1 bg-yellow"></div>
-                <div class="flex width-full height-full height-100-component f1 bg-linen"></div>
+                <div class="flex font-size-20 font-weight-700">Команда</div>
+
+                <div routerLink="/couriers" class="flex margin-top-10 pointer">
+                  <div class="flex items-center justify-center">Все заказы</div>
+                  <div class="flex items-center justify-center margin-left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                         fill="#000000">
+                      <path d="m440-200 137-240H80v-80h497L440-760l440 280-440 280Z" />
+                    </svg>
+                  </div>
+                </div>
+
               </div>
 
-              <div class="flex font-size-20 font-weight-700 between margin-top-20">
-                <div class="flex">Всего</div>
-                <div class="flex">21 680 ₽</div>
+              <div class="flex margin-top-20">
+
+                <div class="stats-list width-full">
+                  @for (item of stats(); track item.label) {
+                    <div class="stat-item">
+                      <div class="stat-info font-size-18">
+                        <div class="flex">{{ item.label }}</div>
+                        <div class="flex font-weight-700">{{ item.count }}</div>
+                      </div>
+
+                      <!-- Контейнер для полоски -->
+                      <div class="bar-track">
+                        <!-- Желтая полоска с динамической шириной -->
+                        <div
+                          class="bar-fill"
+                          [style.width]="getBarWidth(item.count)">
+                        </div>
+                      </div>
+                    </div>
+                  }
+                </div>
               </div>
 
             </div>
 
             <div class="flex bg-white padding-10 radius-10 flex-col font-size-18 margin-top-20">
-              <div class="flex">Следующий слот</div>
-              <div class="flex font-size-20 font-weight-700">Сегодня · 18:00–22:00</div>
-              <div class="flex margin-top-20">Центральный район</div>
+              <div class="flex">За эту неделю</div>
+              <div class="flex font-size-20 font-weight-700">84 620 ₽</div>
+              <div class="flex margin-top-20">96 завершённых доставок</div>
+              <div routerLink="/finance"
+                   class="flex margin-top-20 justify-center items-center button-padding radius-10 bg-gray font-size-20 font-weight-700 pointer">
+                Открыть финансы →
+              </div>
             </div>
 
 
