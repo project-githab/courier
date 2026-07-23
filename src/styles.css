@@ -1226,6 +1226,9 @@ html {
 /* Планшет 991px */
 @media (max-width: 61.938em) {
 
+  .close-tablet {
+    display: none;
+  }
 }
 
 /* Телефон 767px */

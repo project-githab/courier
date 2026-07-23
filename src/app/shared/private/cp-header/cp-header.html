@@ -1,10 +1,16 @@
 <div class="flex height-90 padding-20 items-center between">
 
   <div class="flex flex-col">
-    <div class="flex font-size-24 font-weight-700 close-component">{{ pageInfo.title }}</div>
+
+    <div class="flex">
+      <div class="flex pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+      </div>
+      <div class="flex font-size-24 font-weight-700 close-component margin-left-10 items-center">{{ pageInfo.title }}</div>
+    </div>
 
     <div class="flex margin-top-5 font-size-18 flex-col-component">
-      <div class="flex">{{ pageInfo.subtitle1 }}</div>
+      <div class="flex close-phone">{{ pageInfo.subtitle1 }}</div>
       <div class="flex margin-left-10-component">{{ pageInfo.subtitle2 }}</div>
     </div>
 
