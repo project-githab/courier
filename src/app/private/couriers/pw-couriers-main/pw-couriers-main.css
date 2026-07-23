@@ -1,3 +1,33 @@
+.menu {
+  top: 3.5rem;
+  right: 0;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(30px);
+  transition: opacity .3s ease,
+  transform .3s ease,
+  visibility .3s ease;
+}
+
+
+.menu :hover {
+  background-color: rgb(219 234 254);
+}
+
+.menu-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.menu-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
 .active {
   background-color: black;

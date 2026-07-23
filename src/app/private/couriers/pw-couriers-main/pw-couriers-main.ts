@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject, signal } from '@angular/core';
 import { CpHeader } from '../../../shared/private/cp-header/cp-header';
 import { CpPanel } from '../../../shared/private/cp-panel/cp-panel';
 import { isActive, Router, RouterLink, RouterLinkActive } from '@angular/router';
@@ -27,7 +27,19 @@ import { PwCouriers } from '../pw-couriers/pw-couriers';
   standalone: true,
 })
 export class PwCouriersMain {
-  private router = inject(Router);
+  private readonly router = inject(Router);
+
+  readonly isMenuOpen = signal(false);
+
+  toggleMenu(event: MouseEvent): void {
+    event.stopPropagation();
+    this.isMenuOpen.update((value) => !value);
+  }
+
+  @HostListener('document:click')
+  closeMenu(): void {
+    this.isMenuOpen.set(false);
+  }
 
   readonly isOrdersPage = isActive('/couriers', this.router, {
     paths: 'exact',

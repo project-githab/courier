@@ -539,14 +539,6 @@ html {
   min-height: 4.8rem;
 }
 
-.height-2 {
-  height: 0.2rem;
-}
-
-.height-50 {
-  height: 5rem;
-}
-
 .size-40 {
   width: 4rem;
   height: 4rem;
@@ -563,12 +555,21 @@ html {
   height: 5rem;
 }
 
-.height-60 {
-  height: 6rem;
+
+.height-2 {
+  height: 0.2rem;
 }
 
-.width-60 {
-  width: 6rem;
+.height-30 {
+  height: 3rem;
+}
+
+.height-50 {
+  height: 5rem;
+}
+
+.height-60 {
+  height: 6rem;
 }
 
 .height-70 {
@@ -581,6 +582,10 @@ html {
 
 .height-90 {
   height: 9rem;
+}
+
+.width-60 {
+  width: 6rem;
 }
 
 .size-120 {
@@ -882,6 +887,10 @@ html {
 
 .radius-50p {
   border-radius: 50%;
+}
+
+.border-10 {
+  border-left: 0.1rem solid var(--color-5);
 }
 
 .border-bottom {
@@ -1193,6 +1202,10 @@ html {
 }
 
 
+.open-phone {
+  display: none;
+}
+
 /* Телефон от 320px "Этот breakpoint просто показывает в среде разработчика данную точку для удобства " */
 @media (min-width: 20em) {
 }
@@ -1204,7 +1217,7 @@ html {
     flex-direction: column;
   }
 
-  .close {
+  .close-laptop {
     display: none;
   }
 
@@ -1217,5 +1230,41 @@ html {
 
 /* Телефон 767px */
 @media (max-width: 47.938em) {
+
+  .margin-top-phone {
+    margin-top: 1rem;
+  }
+
+  .column-phone {
+    flex-direction: column;
+  }
+
+  .close-phone {
+    display: none;
+  }
+
+  .open-phone {
+    display: flex;
+  }
+
+  .justify-center-phone {
+    justify-content: center;
+  }
+
+  .font-weight-700-phone {
+    font-weight: 700;
+  }
+
+  .absolute-phone {
+    position: absolute;
+  }
+
+  .radius-top-10-phone {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .radius-10-phone {
+    border-radius: 1rem;
+  }
 
 }

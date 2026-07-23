@@ -1,7 +1,15 @@
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 0.7fr  0.6fr 0.3fr 0.35fr 0.15fr 0.1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+
 .user-grid {
   display: grid;
   grid-template-columns: 0.7fr  0.6fr 0.3fr 0.35fr 0.15fr 0.1fr;
-  /*grid-template-columns: 0.7fr;*/
   gap: 1rem;
   width: 100%;
 }
@@ -26,6 +34,10 @@
     margin-left: 0
   }
 
+  .margin-left-0-component2 {
+    margin-left: 0
+  }
+
 }
 
 /* Планшет 991px */
@@ -35,5 +47,31 @@
 
 /* Телефон 767px */
 @media (max-width: 47.938em) {
+
+
+  .margin-left-0-component {
+    margin-left: 1rem
+  }
+
+
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .nav-grid {
+    display: none;
+  }
+
+
+  .flex-col-laptop {
+    flex-direction: row;
+  }
+
+  .user {
+    top: 1.3rem;
+    right: 1.5rem;
+  }
+
 
 }
