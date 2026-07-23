@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './pw-line.html',
   styleUrl: './pw-line.css',
+  host: {
+    class: 'flex flex-col width-full',
+  },
   standalone: true,
 })
 export class PwLine {}

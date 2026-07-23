@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './pw-delivery.html',
   styleUrl: './pw-delivery.css',
+  host: {
+    class: 'flex flex-col width-full',
+  },
   standalone: true,
 })
 export class PwDelivery {}

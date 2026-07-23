@@ -219,20 +219,24 @@ html {
   padding-top: 0.5rem;
 }
 
-.padding-7 {
-  padding: 0.7rem;
-}
-
 .padding-y-8-x-1 {
   padding: 0.8rem 0.1rem 0.8rem 0.1rem;
+}
+
+.padding-5 {
+  padding: 0.5rem;
+}
+
+.padding-7 {
+  padding: 0.7rem;
 }
 
 .padding-10 {
   padding: 1rem;
 }
 
-.padding-5 {
-  padding: 0.5rem;
+.padding-20 {
+  padding: 2rem;
 }
 
 .padding-button {
@@ -291,9 +295,6 @@ html {
   padding: 0 1.7rem 0 1.7rem;
 }
 
-.padding-20 {
-  padding: 2rem;
-}
 
 .padding-bottom-only-20 {
   padding: 0 0 2rem 0;
@@ -367,8 +368,16 @@ html {
   margin-bottom: 1rem;
 }
 
+.margin-left-05 {
+  margin-left: 0.5rem;
+}
+
 .margin-left-10 {
   margin-left: 1rem;
+}
+
+.margin-right-05 {
+  margin-right: 0.5rem;
 }
 
 .margin-right-10 {
@@ -530,11 +539,6 @@ html {
   min-height: 4.8rem;
 }
 
-.size-48 {
-  width: 4.8rem;
-  height: 4.8rem;
-}
-
 .height-2 {
   height: 0.2rem;
 }
@@ -542,6 +546,17 @@ html {
 .height-50 {
   height: 5rem;
 }
+
+.size-40 {
+  width: 4rem;
+  height: 4rem;
+}
+
+.size-48 {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
 
 .size-50 {
   width: 5rem;
@@ -899,6 +914,11 @@ html {
   border-bottom: 0.1rem solid var(--color-5);
 }
 
+.border-y-05 {
+  border-top: 0.05rem solid var(--color-5);
+  border-bottom: 0.05rem solid var(--color-5);
+}
+
 /* ==================================================
    13. ТЕНИ И ЭФФЕКТЫ
    ================================================== */
@@ -1170,4 +1190,32 @@ html {
 
 .pointer {
   cursor: pointer;
+}
+
+
+/* Телефон от 320px "Этот breakpoint просто показывает в среде разработчика данную точку для удобства " */
+@media (min-width: 20em) {
+}
+
+/* Ноутбук 1199px */
+@media (max-width: 74.938em) {
+
+  .column-laptop {
+    flex-direction: column;
+  }
+
+  .close {
+    display: none;
+  }
+
+}
+
+/* Планшет 991px */
+@media (max-width: 61.938em) {
+
+}
+
+/* Телефон 767px */
+@media (max-width: 47.938em) {
+
 }

@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './pw-free.html',
   styleUrl: './pw-free.css',
+  host: {
+    class: 'flex flex-col width-full',
+  },
   standalone: true,
 })
 export class PwFree {}
