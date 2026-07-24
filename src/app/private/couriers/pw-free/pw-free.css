@@ -1,0 +1,34 @@
+
+.courier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+
+/* Телефон от 320px "Этот breakpoint просто показывает в среде разработчика данную точку для удобства " */
+@media (min-width: 20em) {
+}
+
+/* Ноутбук 1199px */
+@media (max-width: 74.938em) {
+
+  .courier-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* Планшет 991px */
+@media (max-width: 61.938em) {
+
+}
+
+/* Телефон 767px */
+@media (max-width: 47.938em) {
+
+  .courier-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1237,6 +1237,11 @@ html {
   .close-tablet {
     display: none;
   }
+
+  .margin-left-10-tablet {
+    margin-left: 1rem;
+  }
+
 }
 
 /* Телефон 767px */
