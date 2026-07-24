@@ -420,6 +420,10 @@ html {
   margin-right: 4rem;
 }
 
+.margin-x-10 {
+  margin: 0 1rem;
+}
+
 .margin-y-24 {
   margin: 2.4rem 0;
 }
@@ -1210,6 +1214,10 @@ html {
   display: none;
 }
 
+.open-laptop {
+  display: none;
+}
+
 /* Телефон от 320px "Этот breakpoint просто показывает в среде разработчика данную точку для удобства " */
 @media (min-width: 20em) {
 }
@@ -1224,6 +1232,19 @@ html {
   .close-laptop {
     display: none;
   }
+
+  .open-laptop {
+    display: flex;
+  }
+
+  .flex-start-laptop {
+    align-items: flex-start;
+  }
+
+  .justify-center-laptop {
+    justify-content: center;
+  }
+
 
 }
 
@@ -1247,8 +1268,13 @@ html {
 /* Телефон 767px */
 @media (max-width: 47.938em) {
 
-  .margin-top-phone {
+
+  .margin-top-10-phone {
     margin-top: 1rem;
+  }
+
+  .margin-top-20-phone {
+    margin-top: 2rem;
   }
 
   .column-phone {
@@ -1260,6 +1286,10 @@ html {
   }
 
   .open-phone {
+    display: flex;
+  }
+
+  .open-phone-free {
     display: flex;
   }
 

@@ -1,0 +1,77 @@
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 0.7fr  0.6fr 0.3fr 0.35fr 0.1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+
+.user-grid {
+  display: grid;
+  grid-template-columns: 0.7fr  0.6fr 0.3fr 0.35fr 0.1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+
+/* Телефон от 320px "Этот breakpoint просто показывает в среде разработчика данную точку для удобства " */
+@media (min-width: 20em) {
+}
+
+/* Ноутбук 1199px */
+@media (max-width: 74.938em) {
+
+  .flex-col-laptop {
+    flex-direction: column;
+  }
+
+  .margin-top-05-component {
+    margin-top: 0.5rem;
+  }
+
+  .margin-left-0-component {
+    margin-left: 0
+  }
+
+  .margin-left-0-component2 {
+    margin-left: 0
+  }
+
+}
+
+/* Планшет 991px */
+@media (max-width: 61.938em) {
+
+}
+
+/* Телефон 767px */
+@media (max-width: 47.938em) {
+
+
+  .margin-left-0-component {
+    margin-left: 1rem
+  }
+
+
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .nav-grid {
+    display: none;
+  }
+
+
+  .flex-col-laptop {
+    flex-direction: row;
+  }
+
+  .user {
+    top: 1.3rem;
+    right: 1.5rem;
+  }
+
+
+}
