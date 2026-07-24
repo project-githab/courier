@@ -872,6 +872,10 @@ html {
    12. ГРАНИЦЫ И СКРУГЛЕНИЯ
    ================================================== */
 
+.border-none {
+  border: none;
+}
+
 .border-top-3 {
   border-top: 0.3rem solid var(--color-5);
 }
@@ -916,10 +920,6 @@ html {
   border-radius: 50%;
 }
 
-.border-10 {
-  border-left: 0.1rem solid var(--color-5);
-}
-
 .border-bottom {
   border-bottom: 0.1rem solid var(--color-5);
 }
@@ -938,6 +938,10 @@ html {
 
 .border-top-1 {
   border-top: 0.1rem solid var(--color-5);
+}
+
+.border-1 {
+  border: 0.1rem solid var(--color-5);
 }
 
 .border-x {
@@ -1195,7 +1199,7 @@ html {
    19. ФОРМЫ
    ================================================== */
 
-.input-form {
+.input-company {
   height: 4rem;
   border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
   background-color: var(--color-18);
@@ -1206,12 +1210,12 @@ html {
   font-size: 1.8rem;
 }
 
-.input-form:focus {
+.input-company:focus {
   background-color: var(--color-1);
   border: 0.2rem solid var(--color-11);
 }
 
-.input-form:hover {
+.input-company:hover {
   background-color: var(--color-19);
 }
 
