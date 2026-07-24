@@ -1,4 +1,28 @@
 
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgb(0 0 0 / 40%);
+}
+
+.mobile-menu {
+  min-width: fit-content;
+  width: 290px;
+  height: 100%;
+  animation: mobile-menu-open 200ms ease-out;
+}
+
+@keyframes mobile-menu-open {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 .margin-left-10-component {
   margin-left: 1rem;
 }

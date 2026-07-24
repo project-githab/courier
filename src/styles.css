@@ -1206,6 +1206,10 @@ html {
   display: none;
 }
 
+.open-tablet {
+  display: none;
+}
+
 /* Телефон от 320px "Этот breakpoint просто показывает в среде разработчика данную точку для удобства " */
 @media (min-width: 20em) {
 }
@@ -1225,6 +1229,10 @@ html {
 
 /* Планшет 991px */
 @media (max-width: 61.938em) {
+
+  .open-tablet {
+    display: flex;
+  }
 
   .close-tablet {
     display: none;
@@ -1268,6 +1276,10 @@ html {
 
   .radius-10-phone {
     border-radius: 1rem;
+  }
+
+  .items-center-phone {
+    align-items: center;
   }
 
 }

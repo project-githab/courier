@@ -141,6 +141,12 @@
 /* Телефон 767px */
 @media (max-width: 47.938em) {
 
+  .order-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .grid-dashboard {
     display: grid;
     grid-template-columns: 1fr;
