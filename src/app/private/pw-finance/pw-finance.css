@@ -1,3 +1,16 @@
+
+.finance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.finance-document-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 0.2fr 0.1fr;
+  gap: 2rem;
+}
+
 @media (min-width: 20em) {
 }
 
@@ -15,5 +28,13 @@
 
 /* Телефон 767px */
 @media (max-width: 47.938em) {
+
+  .finance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .finance-document-grid {
+    grid-template-columns: 1fr;
+  }
 
 }
