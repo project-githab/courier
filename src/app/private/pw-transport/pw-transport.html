@@ -1,6 +1,6 @@
 <div class="flex bg-linen flex-grow">
 
-  <app-cp-panel class="close-component"></app-cp-panel>
+  <app-cp-panel class="close-tablet"></app-cp-panel>
 
   <div class="flex flex-col width-full">
 
@@ -10,7 +10,819 @@
 
       <div class="flex padding-24 max-width-1400 width-full flex-col">
 
-        ddd
+
+        <div class="flex width-full between column-phone">
+          <div class="flex justify-center flex-col">
+            <div class="flex font-size-20 font-weight-700">Транспорт компании</div>
+            <div class="flex font-size-16 margin-top-5">10 единиц транспорта</div>
+          </div>
+          <div
+            class="flex button-padding bg-yellow-hover radius-10 pointer width-content margin-top-10-phone items-center">
+            +
+            Добавить транспорт
+          </div>
+        </div>
+
+        <div class="transport-grid margin-top-20">
+
+          <div class="flex bg-white radius-10 padding-20 flex-col">
+
+            <div class="flex">
+
+              <div class="flex">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="30px" height="30px">
+                    <!-- Тень снизу -->
+                    <ellipse cx="32" cy="56" rx="26" ry="4" fill="#000000" opacity="0.2" />
+
+                    <!-- Заднее колесо (слева) -->
+                    <g id="back-wheel">
+                      <circle cx="16" cy="46" r="9" fill="#292d32" />
+                      <circle cx="16" cy="46" r="4.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- Переднее колесо (справа) -->
+                    <g id="front-wheel">
+                      <circle cx="48" cy="46" r="9" fill="#292d32" />
+                      <circle cx="48" cy="46" r="4.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- Основной красный кузов (повернут вправо) -->
+                    <path d="M 58 36
+           C 58 30, 54 28, 48 28
+           L 44 28
+           C 40 16, 34 12, 22 12
+           L 16 12
+           C 10 12, 6 18, 4 26
+           L 3 31
+           C 1 33, 1 38, 4 40
+           L 4 45
+           C 4 47, 6 48, 8 48
+           L 56 48
+           C 58 48, 58 46, 58 44 Z"
+                          fill="#ff3b30" />
+
+                    <!-- Тёмный бампер/помост снизу кузова -->
+                    <path d="M 58 41 Q 32 44 4 41 L 4 45 C 4 47, 6 48, 8 48 L 56 48 C 58 48, 58 46, 58 44 Z"
+                          fill="#d7261b" />
+
+                    <!-- Окна / Заднее и переднее (лобовое) стекло -->
+                    <!-- Переднее стекло (справа) -->
+                    <path d="M 42 26 C 39 18, 35 16, 30 16 L 30 26 Z" fill="#70d7ff" />
+
+                    <!-- Заднее стекло (слева) -->
+                    <path d="M 27 16 L 20 16 C 16 16, 12 20, 10 26 L 27 26 Z" fill="#70d7ff" />
+
+                    <!-- Блик на стёклах -->
+                    <path d="M 39 24 C 37 20, 34 18, 31 17 L 31 24 Z" fill="#ffffff" opacity="0.5" />
+                    <path d="M 25 17 L 21 17 C 18 17, 15 20, 13 24 L 25 24 Z" fill="#ffffff" opacity="0.5" />
+
+                    <!-- Разделитель между окнами -->
+                    <rect x="27" y="15" width="3" height="12" fill="#ff3b30" />
+
+                    <!-- Передняя фара (справа) -->
+                    <path d="M 6 32 C 3 32, 2 34, 2 36 C 4 38, 7 38, 8 36 Z" fill="#ffcc00" />
+
+                    <!-- Задний фонарь (слева) -->
+                    <rect x="55" y="32" width="3" height="5" rx="1.5" fill="#ff9500" />
+
+                    <!-- Дверная ручка -->
+                    <rect x="28" y="32" width="6" height="2" rx="1" fill="#b91c1c" />
+                  </svg>
+                </div>
+                <div class="flex flex-col margin-left-10 font-size-18">
+                  <div class="flex font-weight-700">Toyota Probox</div>
+                  <div class="flex margin-top-5">А123АА 65</div>
+                  <div class="flex margin-top-5">Алексей Петров</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex between margin-top-10">
+              <div class="flex text-green font-weight-700">На доставке</div>
+              <div class="flex pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                     fill="#000000">
+                  <path
+                    d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex bg-white radius-10 padding-20 flex-col">
+
+            <div class="flex">
+
+              <div class="flex">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="30px" height="30px">
+                    <!-- Тень снизу -->
+                    <ellipse cx="32" cy="56" rx="26" ry="4" fill="#000000" opacity="0.2" />
+
+                    <!-- Заднее колесо (слева) -->
+                    <g id="back-wheel">
+                      <circle cx="16" cy="46" r="9" fill="#292d32" />
+                      <circle cx="16" cy="46" r="4.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- Переднее колесо (справа) -->
+                    <g id="front-wheel">
+                      <circle cx="48" cy="46" r="9" fill="#292d32" />
+                      <circle cx="48" cy="46" r="4.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- Основной красный кузов (повернут вправо) -->
+                    <path d="M 58 36
+           C 58 30, 54 28, 48 28
+           L 44 28
+           C 40 16, 34 12, 22 12
+           L 16 12
+           C 10 12, 6 18, 4 26
+           L 3 31
+           C 1 33, 1 38, 4 40
+           L 4 45
+           C 4 47, 6 48, 8 48
+           L 56 48
+           C 58 48, 58 46, 58 44 Z"
+                          fill="#ff3b30" />
+
+                    <!-- Тёмный бампер/помост снизу кузова -->
+                    <path d="M 58 41 Q 32 44 4 41 L 4 45 C 4 47, 6 48, 8 48 L 56 48 C 58 48, 58 46, 58 44 Z"
+                          fill="#d7261b" />
+
+                    <!-- Окна / Заднее и переднее (лобовое) стекло -->
+                    <!-- Переднее стекло (справа) -->
+                    <path d="M 42 26 C 39 18, 35 16, 30 16 L 30 26 Z" fill="#70d7ff" />
+
+                    <!-- Заднее стекло (слева) -->
+                    <path d="M 27 16 L 20 16 C 16 16, 12 20, 10 26 L 27 26 Z" fill="#70d7ff" />
+
+                    <!-- Блик на стёклах -->
+                    <path d="M 39 24 C 37 20, 34 18, 31 17 L 31 24 Z" fill="#ffffff" opacity="0.5" />
+                    <path d="M 25 17 L 21 17 C 18 17, 15 20, 13 24 L 25 24 Z" fill="#ffffff" opacity="0.5" />
+
+                    <!-- Разделитель между окнами -->
+                    <rect x="27" y="15" width="3" height="12" fill="#ff3b30" />
+
+                    <!-- Передняя фара (справа) -->
+                    <path d="M 6 32 C 3 32, 2 34, 2 36 C 4 38, 7 38, 8 36 Z" fill="#ffcc00" />
+
+                    <!-- Задний фонарь (слева) -->
+                    <rect x="55" y="32" width="3" height="5" rx="1.5" fill="#ff9500" />
+
+                    <!-- Дверная ручка -->
+                    <rect x="28" y="32" width="6" height="2" rx="1" fill="#b91c1c" />
+                  </svg>
+                </div>
+                <div class="flex flex-col margin-left-10 font-size-18">
+                  <div class="flex font-weight-700">Kia Rio</div>
+                  <div class="flex margin-top-5">В456ВВ 65</div>
+                  <div class="flex margin-top-5">Дмитрий Ли</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex between margin-top-10">
+              <div class="flex text-green font-weight-700">На линии</div>
+              <div class="flex pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                     fill="#000000">
+                  <path
+                    d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex bg-white radius-10 padding-20 flex-col">
+
+            <div class="flex">
+
+              <div class="flex">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="30px" height="30px">
+                    <!-- Тень снизу -->
+                    <ellipse cx="32" cy="56" rx="26" ry="4" fill="#000000" opacity="0.2" />
+
+                    <!-- Заднее колесо (слева) -->
+                    <g id="back-wheel">
+                      <circle cx="16" cy="46" r="9" fill="#292d32" />
+                      <circle cx="16" cy="46" r="4.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- Переднее колесо (справа) -->
+                    <g id="front-wheel">
+                      <circle cx="48" cy="46" r="9" fill="#292d32" />
+                      <circle cx="48" cy="46" r="4.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- Основной красный кузов (повернут вправо) -->
+                    <path d="M 58 36
+           C 58 30, 54 28, 48 28
+           L 44 28
+           C 40 16, 34 12, 22 12
+           L 16 12
+           C 10 12, 6 18, 4 26
+           L 3 31
+           C 1 33, 1 38, 4 40
+           L 4 45
+           C 4 47, 6 48, 8 48
+           L 56 48
+           C 58 48, 58 46, 58 44 Z"
+                          fill="#ff3b30" />
+
+                    <!-- Тёмный бампер/помост снизу кузова -->
+                    <path d="M 58 41 Q 32 44 4 41 L 4 45 C 4 47, 6 48, 8 48 L 56 48 C 58 48, 58 46, 58 44 Z"
+                          fill="#d7261b" />
+
+                    <!-- Окна / Заднее и переднее (лобовое) стекло -->
+                    <!-- Переднее стекло (справа) -->
+                    <path d="M 42 26 C 39 18, 35 16, 30 16 L 30 26 Z" fill="#70d7ff" />
+
+                    <!-- Заднее стекло (слева) -->
+                    <path d="M 27 16 L 20 16 C 16 16, 12 20, 10 26 L 27 26 Z" fill="#70d7ff" />
+
+                    <!-- Блик на стёклах -->
+                    <path d="M 39 24 C 37 20, 34 18, 31 17 L 31 24 Z" fill="#ffffff" opacity="0.5" />
+                    <path d="M 25 17 L 21 17 C 18 17, 15 20, 13 24 L 25 24 Z" fill="#ffffff" opacity="0.5" />
+
+                    <!-- Разделитель между окнами -->
+                    <rect x="27" y="15" width="3" height="12" fill="#ff3b30" />
+
+                    <!-- Передняя фара (справа) -->
+                    <path d="M 6 32 C 3 32, 2 34, 2 36 C 4 38, 7 38, 8 36 Z" fill="#ffcc00" />
+
+                    <!-- Задний фонарь (слева) -->
+                    <rect x="55" y="32" width="3" height="5" rx="1.5" fill="#ff9500" />
+
+                    <!-- Дверная ручка -->
+                    <rect x="28" y="32" width="6" height="2" rx="1" fill="#b91c1c" />
+                  </svg>
+                </div>
+                <div class="flex flex-col margin-left-10 font-size-18">
+                  <div class="flex font-weight-700">Honda Fit</div>
+                  <div class="flex margin-top-5">С789СС 65</div>
+                  <div class="flex margin-top-5">Елена Пак</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex between margin-top-10">
+              <div class="flex text-green font-weight-700">На линии</div>
+              <div class="flex pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                     fill="#000000">
+                  <path
+                    d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex bg-white radius-10 padding-20 flex-col">
+
+            <div class="flex ">
+
+              <div class="flex">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="30px" height="30px">
+                    <!-- Тень снизу -->
+                    <ellipse cx="32" cy="56" rx="26" ry="4" fill="#000000" opacity="0.2" />
+
+                    <!-- Заднее колесо (слева) -->
+                    <g id="back-wheel">
+                      <circle cx="16" cy="46" r="9" fill="#292d32" />
+                      <circle cx="16" cy="46" r="4.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- Переднее колесо (справа) -->
+                    <g id="front-wheel">
+                      <circle cx="48" cy="46" r="9" fill="#292d32" />
+                      <circle cx="48" cy="46" r="4.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- Основной красный кузов (повернут вправо) -->
+                    <path d="M 58 36
+           C 58 30, 54 28, 48 28
+           L 44 28
+           C 40 16, 34 12, 22 12
+           L 16 12
+           C 10 12, 6 18, 4 26
+           L 3 31
+           C 1 33, 1 38, 4 40
+           L 4 45
+           C 4 47, 6 48, 8 48
+           L 56 48
+           C 58 48, 58 46, 58 44 Z"
+                          fill="#ff3b30" />
+
+                    <!-- Тёмный бампер/помост снизу кузова -->
+                    <path d="M 58 41 Q 32 44 4 41 L 4 45 C 4 47, 6 48, 8 48 L 56 48 C 58 48, 58 46, 58 44 Z"
+                          fill="#d7261b" />
+
+                    <!-- Окна / Заднее и переднее (лобовое) стекло -->
+                    <!-- Переднее стекло (справа) -->
+                    <path d="M 42 26 C 39 18, 35 16, 30 16 L 30 26 Z" fill="#70d7ff" />
+
+                    <!-- Заднее стекло (слева) -->
+                    <path d="M 27 16 L 20 16 C 16 16, 12 20, 10 26 L 27 26 Z" fill="#70d7ff" />
+
+                    <!-- Блик на стёклах -->
+                    <path d="M 39 24 C 37 20, 34 18, 31 17 L 31 24 Z" fill="#ffffff" opacity="0.5" />
+                    <path d="M 25 17 L 21 17 C 18 17, 15 20, 13 24 L 25 24 Z" fill="#ffffff" opacity="0.5" />
+
+                    <!-- Разделитель между окнами -->
+                    <rect x="27" y="15" width="3" height="12" fill="#ff3b30" />
+
+                    <!-- Передняя фара (справа) -->
+                    <path d="M 6 32 C 3 32, 2 34, 2 36 C 4 38, 7 38, 8 36 Z" fill="#ffcc00" />
+
+                    <!-- Задний фонарь (слева) -->
+                    <rect x="55" y="32" width="3" height="5" rx="1.5" fill="#ff9500" />
+
+                    <!-- Дверная ручка -->
+                    <rect x="28" y="32" width="6" height="2" rx="1" fill="#b91c1c" />
+                  </svg>
+                </div>
+                <div class="flex flex-col margin-left-10 font-size-18">
+                  <div class="flex font-weight-700">Toyota Hiace</div>
+                  <div class="flex margin-top-5">Е321КК 65</div>
+                  <div class="flex margin-top-5">Не назначен</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex between margin-top-10">
+              <div class="flex font-weight-700">Свободен</div>
+              <div class="flex pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                     fill="#000000">
+                  <path
+                    d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex bg-white radius-10 padding-20 flex-col">
+
+            <div class="flex">
+
+              <div class="flex">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="30px" height="30px">
+                    <!-- Тень под мопедом -->
+                    <ellipse cx="32" cy="56" rx="24" ry="3.5" fill="#000000" opacity="0.18" />
+
+                    <!-- ЗАДНЕЕ КОЛЕСО -->
+                    <g id="back-wheel">
+                      <circle cx="16" cy="46" r="9" fill="#292d32" />
+                      <circle cx="16" cy="46" r="4.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- ПЕРЕДНЕЕ КОЛЕСО -->
+                    <g id="front-wheel">
+                      <circle cx="48" cy="46" r="9" fill="#292d32" />
+                      <circle cx="48" cy="46" r="4.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- ЗАДНЕЕ КРЫЛО (над колесом) -->
+                    <path d="M 8 44 C 8 38, 14 36, 22 37 L 22 42 Z" fill="#d7261b" />
+
+                    <!-- КОРПУС / ЗАДНЯЯ ЧАСТЬ МОПЕДА -->
+                    <path d="M 12 37
+           C 12 30, 16 26, 24 26
+           L 32 26
+           C 34 32, 32 40, 26 44
+           L 14 44
+           C 12 44, 12 40, 12 37 Z"
+                          fill="#ff3b30" />
+
+                    <!-- СЕДЛО -->
+                    <path d="M 14 26 C 14 22, 18 21, 28 22 C 32 22.5, 33 25, 30 26 Z" fill="#292d32" />
+
+                    <!-- ПЛАТФОРМА ДЛЯ НОГ (ПОДНОЖКА) -->
+                    <path d="M 25 44 L 38 44 C 40 44, 41 42, 40 40 L 32 40 C 28 40, 26 42, 25 44 Z" fill="#292d32" />
+
+                    <!-- ПЕРЕДНЯЯ ЧАСТЬ (ЩИТОК И ВЕРХ) -->
+                    <!-- Вынос к передней фаре -->
+                    <path d="M 33 40 L 44 22 C 45 20, 47 19, 49 22 L 53 32 C 55 36, 52 44, 46 44 Z" fill="#ff3b30" />
+                    <!-- Теневой изгиб на щитке -->
+                    <path d="M 35 38 L 44 24 L 47 30 L 43 42 Z" fill="#d7261b" />
+
+                    <!-- ПЕРЕДНЕЕ КРЫЛО (над передним колесом) -->
+                    <path d="M 42 42 C 42 38, 47 36, 54 40 L 52 44 Z" fill="#ff3b30" />
+
+                    <!-- РУЛЬ И ЗЕРКАЛО -->
+                    <!-- Рулевая колонка -->
+                    <path d="M 44 22 L 42 15 C 42 14, 43 13, 44 13 L 47 13" stroke="#94a3b8" stroke-width="2.5"
+                          stroke-linecap="round" fill="none" />
+                    <!-- Грипса (ручка) -->
+                    <rect x="39" y="12" width="6" height="3" rx="1.5" fill="#292d32" />
+                    <!-- Зеркало заднего вида -->
+                    <path d="M 45 13 L 42 8" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round" />
+                    <circle cx="41" cy="7" r="2.5" fill="#70d7ff" />
+
+                    <!-- ФАРА (СМОТРИТ ВПЕРЕД / ВПРАВО) -->
+                    <path d="M 47 16 C 50 16, 52 18, 52 20 C 50 22, 47 22, 46 20 Z" fill="#ffcc00" />
+                    <!-- Задний фонарь (слева) -->
+                    <rect x="9" y="32" width="3" height="5" rx="1.5" fill="#ff9500" />
+
+                    <!-- ВЫХЛОПНАЯ ТРУБА -->
+                    <rect x="14" y="47" width="12" height="3" rx="1.5" fill="#64748b" />
+                  </svg>
+                </div>
+                <div class="flex flex-col margin-left-10 font-size-18">
+                  <div class="flex font-weight-700">Мопед</div>
+                  <div class="flex margin-top-5">М654ММ 65</div>
+                  <div class="flex margin-top-5">Игорь Пак</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex between margin-top-10">
+              <div class="flex font-weight-700">Не на линии</div>
+              <div class="flex pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                     fill="#000000">
+                  <path
+                    d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex bg-white radius-10 padding-20 flex-col">
+
+            <div class="flex">
+
+              <div class="flex">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="30px" height="30px">
+                    <!-- Тень под велосипедом -->
+                    <ellipse cx="17" cy="53" rx="13" ry="3" fill="#000000" opacity="0.15" />
+                    <ellipse cx="47" cy="53" rx="13" ry="3" fill="#000000" opacity="0.15" />
+
+                    <!-- Заднее колесо (слева) -->
+                    <g id="back-wheel">
+                      <circle cx="17" cy="42" r="11" fill="none" stroke="#292d32" stroke-width="3" />
+                      <circle cx="17" cy="42" r="9.5" fill="none" stroke="#94a3b8" stroke-width="1" />
+                      <!-- Спицы -->
+                      <path d="M 17 31 L 17 53 M 6 42 L 28 42 M 9 34 L 25 50 M 9 50 L 25 34" stroke="#cbd5e1"
+                            stroke-width="0.8" />
+                      <!-- Втулка -->
+                      <circle cx="17" cy="42" r="2.5" fill="#475569" />
+                    </g>
+
+                    <!-- Переднее колесо (справа) -->
+                    <g id="front-wheel">
+                      <circle cx="47" cy="42" r="11" fill="none" stroke="#292d32" stroke-width="3" />
+                      <circle cx="47" cy="42" r="9.5" fill="none" stroke="#94a3b8" stroke-width="1" />
+                      <!-- Спицы -->
+                      <path d="M 47 31 L 47 53 M 36 42 L 58 42 M 39 34 L 55 50 M 39 50 L 55 34" stroke="#cbd5e1"
+                            stroke-width="0.8" />
+                      <!-- Втулка -->
+                      <circle cx="47" cy="42" r="2.5" fill="#475569" />
+                    </g>
+
+                    <!-- Рама велосипеда (Красная) -->
+                    <g id="frame" stroke="#ff3b30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                       fill="none">
+                      <!-- Нижняя труба рамы -->
+                      <path d="M 17 42 L 31 42 L 44 26 L 25 26 Z" />
+                      <!-- Заднее перья -->
+                      <path d="M 17 42 L 25 26" />
+                    </g>
+
+                    <!-- Передняя вилка и руль -->
+                    <g id="fork-and-handlebars">
+                      <!-- Передняя вилка -->
+                      <path d="M 47 42 L 43 21" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" />
+                      <!-- Вынос руля -->
+                      <path d="M 43 21 L 42 16" stroke="#475569" stroke-width="2.5" stroke-linecap="round" />
+                      <!-- Руль -->
+                      <path d="M 38 16 L 45 16 C 47 16, 48 15, 48 13" fill="none" stroke="#292d32" stroke-width="2.5"
+                            stroke-linecap="round" />
+                      <!-- Грипса (рукоятка) -->
+                      <circle cx="48" cy="13" r="1.5" fill="#ff9500" />
+                    </g>
+
+                    <!-- Подседельный штырь и седло -->
+                    <g id="seat">
+                      <!-- Подседельный штырь -->
+                      <path d="M 25 26 L 24 20" stroke="#475569" stroke-width="2.5" stroke-linecap="round" />
+                      <!-- Седло -->
+                      <path d="M 19 20 C 19 18, 22 18, 28 19 C 29 19, 29 21, 27 21 L 21 21 C 19.5 21, 19 20.5, 19 20 Z"
+                            fill="#292d32" />
+                    </g>
+
+                    <!-- Педали и система (шатуны) -->
+                    <g id="pedals">
+                      <!-- Ведущая звездочка -->
+                      <circle cx="31" cy="42" r="3.5" fill="#64748b" />
+                      <circle cx="31" cy="42" r="2" fill="#1e293b" />
+                      <!-- Шатуны -->
+                      <path d="M 31 38 L 31 46" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+                      <!-- Педали -->
+                      <rect x="29" y="36" width="4" height="2" rx="1" fill="#292d32" />
+                      <rect x="29" y="46" width="4" height="2" rx="1" fill="#292d32" />
+                    </g>
+
+                    <!-- Цепь -->
+                    <path d="M 17 42 L 31 39.5 M 17 42 L 31 44.5" stroke="#cbd5e1" stroke-width="1"
+                          stroke-dasharray="1 1" />
+                  </svg>
+                </div>
+                <div class="flex flex-col margin-left-10 font-size-18">
+                  <div class="flex font-weight-700">Велосипед</div>
+                  <div class="flex margin-top-5">Максим Цой</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex between margin-top-10">
+              <div class="flex text-green font-weight-700">На линии</div>
+              <div class="flex pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                     fill="#000000">
+                  <path
+                    d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex bg-white radius-10 padding-20 flex-col">
+
+            <div class="flex">
+
+              <div class="flex">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="30px" height="30px">
+                    <!-- Тень под самокатом -->
+                    <ellipse cx="32" cy="57" rx="25" ry="3" fill="#000000" opacity="0.18" />
+
+                    <!-- ЗАДНЕЕ КОЛЕСО (Слева) -->
+                    <g id="back-wheel">
+                      <circle cx="14" cy="48" r="7" fill="#292d32" />
+                      <circle cx="14" cy="48" r="3.5" fill="#e2e8f0" />
+                      <!-- Мотор-колесо / центр -->
+                      <circle cx="14" cy="48" r="2" fill="#64748b" />
+                    </g>
+
+                    <!-- ПЕРЕДНЕЕ КОЛЕСО (Справа) -->
+                    <g id="front-wheel">
+                      <circle cx="50" cy="48" r="7" fill="#292d32" />
+                      <circle cx="50" cy="48" r="3.5" fill="#e2e8f0" />
+                    </g>
+
+                    <!-- ЗАДНЕЕ КРЫЛО И СТОП-СИГНАЛ -->
+                    <path d="M 8 45 C 8 41, 13 40, 19 42 L 17 46 Z" fill="#292d32" />
+                    <!-- Задний стоп-сигнал -->
+                    <rect x="8" y="42" width="2" height="3" rx="1" fill="#ff3b30" />
+
+                    <!-- ПЛАТФОРМА (ДЕКА С АКБ) -->
+                    <!-- Нижняя часть корпуса деки -->
+                    <rect x="14" y="44" width="32" height="6" rx="2" fill="#d7261b" />
+                    <!-- Верхняя противоскользящая шкурка -->
+                    <rect x="15" y="43" width="30" height="3" rx="1.5" fill="#292d32" />
+                    <!-- Декоративная подсветка/полоса на деке -->
+                    <rect x="18" y="46" width="22" height="1.5" rx="0.75" fill="#ffcc00" />
+
+                    <!-- ПЕРЕДНЯЯ ВИЛКА И РУЛЕВАЯ СТОЙКА -->
+                    <!-- Переднее крыло -->
+                    <path d="M 44 45 C 44 42, 48 41, 54 44 Z" fill="#292d32" />
+                    <!-- Вилка переднего колеса -->
+                    <path d="M 50 48 L 47 38" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" />
+                    <!-- Механизм складывания (язычок) -->
+                    <rect x="44" y="37" width="5" height="4" rx="1" fill="#ff3b30" />
+
+                    <!-- Основная наклоненная рулевая стойка -->
+                    <line x1="46" y1="38" x2="38" y2="13" stroke="#ff3b30" stroke-width="3.5" stroke-linecap="round" />
+                    <line x1="46" y1="38" x2="38" y2="13" stroke="#d7261b" stroke-width="1" stroke-linecap="round" />
+
+                    <!-- РУЛЬ И ЭЛЕКТРОНИКА -->
+                    <!-- Вынос руля -->
+                    <path d="M 38 13 L 36 10" stroke="#292d32" stroke-width="3" stroke-linecap="round" />
+                    <!-- Грипса (ручка руля) -->
+                    <path d="M 32 10 L 40 10" stroke="#292d32" stroke-width="3.5" stroke-linecap="round" />
+                    <circle cx="31" cy="10" r="1.8" fill="#ff9500" /> <!-- Оранжевый торец -->
+
+                    <!-- Бортовой компьютер / Дисплей -->
+                    <rect x="35.5" y="8" width="4" height="4" rx="1" fill="#0f172a" />
+                    <rect x="36.5" y="9" width="2" height="2" fill="#70d7ff" />
+
+                    <!-- ПЕРЕДНЯЯ ФАРА -->
+                    <path d="M 40 15 C 42 15, 43 16.5, 43 18 C 41 19, 39 19, 39 17 Z" fill="#ffcc00" />
+                  </svg>
+                </div>
+                <div class="flex flex-col margin-left-10 font-size-18">
+                  <div class="flex font-weight-700">Электросамокат</div>
+                  <div class="flex margin-top-5">А123АА 65</div>
+                  <div class="flex margin-top-5">Петренко Максим</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex between margin-top-10">
+              <div class="flex text-green font-weight-700">На линии</div>
+              <div class="flex pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                     fill="#000000">
+                  <path
+                    d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex bg-white radius-10 padding-20 flex-col">
+
+            <div class="flex">
+
+              <div class="flex">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="40px" height="40px">
+                    <defs>
+                      <!-- Градиент для верхней части кузова -->
+                      <linearGradient id="vanTopGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#FFFFFF" />
+                        <stop offset="100%" stop-color="#ECEFF1" />
+                      </linearGradient>
+
+                      <!-- Градиент для нижней части кузова -->
+                      <linearGradient id="vanBodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00ACC1" />
+                        <stop offset="100%" stop-color="#00838F" />
+                      </linearGradient>
+
+                      <!-- Градиент для стекол -->
+                      <linearGradient id="glassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#80DEEA" />
+                        <stop offset="100%" stop-color="#0097A7" />
+                      </linearGradient>
+
+                      <!-- Градиент для шин -->
+                      <radialGradient id="vanTireGradient" cx="50%" cy="50%" r="50%">
+                        <stop offset="70%" stop-color="#37474F" />
+                        <stop offset="100%" stop-color="#212121" />
+                      </radialGradient>
+
+                      <!-- Тень от микроавтобуса -->
+                      <ellipse id="vanShadow" cx="400" cy="430" rx="320" ry="18" fill="#000000" opacity="0.2" />
+                    </defs>
+
+                    <!-- Тень на земле -->
+                    <use href="#vanShadow" />
+
+                    <!-- ЗАДНЕЕ КОЛЕСО -->
+                    <g id="van-rear-wheel">
+                      <circle cx="240" cy="370" r="55" fill="url(#vanTireGradient)" />
+                      <circle cx="240" cy="370" r="32" fill="#ECEFF1" stroke="#CFD8DC" stroke-width="3" />
+                      <circle cx="240" cy="370" r="12" fill="#78909C" />
+                      <!-- Колпак / крепеж -->
+                      <circle cx="240" cy="355" r="4" fill="#B0BEC5" />
+                      <circle cx="240" cy="385" r="4" fill="#B0BEC5" />
+                      <circle cx="225" cy="370" r="4" fill="#B0BEC5" />
+                      <circle cx="255" cy="370" r="4" fill="#B0BEC5" />
+                    </g>
+
+                    <!-- ПЕРЕДНЕЕ КОЛЕСО -->
+                    <g id="van-front-wheel">
+                      <circle cx="580" cy="370" r="55" fill="url(#vanTireGradient)" />
+                      <circle cx="580" cy="370" r="32" fill="#ECEFF1" stroke="#CFD8DC" stroke-width="3" />
+                      <circle cx="580" cy="370" r="12" fill="#78909C" />
+                      <!-- Колпак / крепеж -->
+                      <circle cx="580" cy="355" r="4" fill="#B0BEC5" />
+                      <circle cx="580" cy="385" r="4" fill="#B0BEC5" />
+                      <circle cx="565" cy="370" r="4" fill="#B0BEC5" />
+                      <circle cx="595" cy="370" r="4" fill="#B0BEC5" />
+                    </g>
+
+                    <!-- КОРПУС МИКРОАВТОБУСА -->
+                    <g id="van-body">
+                      <!-- Нижняя часть кузова -->
+                      <path d="M 120 250
+             L 120 350
+             A 20 20 0 0 0 140 370
+             L 180 370
+             A 60 60 0 0 1 300 370
+             L 520 370
+             A 60 60 0 0 1 640 370
+             L 660 370
+             A 20 20 0 0 0 680 350
+             L 680 270
+             C 680 250 670 230 650 220
+             L 620 210
+             L 120 250 Z"
+                            fill="url(#vanBodyGradient)" />
+
+                      <!-- Верхняя часть кузова (крыша и стойки) -->
+                      <path d="M 120 250
+             L 130 150
+             C 135 130 150 120 170 120
+             L 600 120
+             C 630 120 650 140 660 170
+             L 675 220
+             L 650 220
+             C 670 230 680 250 680 270
+             L 120 250 Z"
+                            fill="url(#vanTopGradient)" />
+
+                      <!-- Защитный молдинг / хромированная полоса посередине -->
+                      <path d="M 120 250 L 678 245" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+                      <path d="M 120 254 L 678 249" stroke="#CFD8DC" stroke-width="2" stroke-linecap="round" />
+
+                      <!-- Передний и задний бамперы -->
+                      <rect x="105" y="340" width="20" height="25" rx="5" fill="#37474F" />
+                      <rect x="670" y="340" width="20" height="25" rx="5" fill="#37474F" />
+                    </g>
+
+                    <!-- ОКНА -->
+                    <g id="van-windows">
+                      <!-- Заднее боковое окно -->
+                      <path d="M 155 140 L 270 140 L 270 220 L 145 220 L 150 160 Z" fill="url(#glassGradient)" rx="5" />
+                      <!-- Среднее боковое окно -->
+                      <rect x="285" y="140" width="140" height="80" rx="5" fill="url(#glassGradient)" />
+                      <!-- Переднее боковое окно (водительское) -->
+                      <rect x="440" y="140" width="120" height="80" rx="5" fill="url(#glassGradient)" />
+                      <!-- Лобовое стекло (вид сбоку) -->
+                      <path d="M 575 140 L 635 165 C 645 175 650 190 655 220 L 575 220 Z" fill="url(#glassGradient)" />
+
+                      <!-- Блики на окнах -->
+                      <path d="M 170 140 L 148 220 M 200 140 L 178 220" stroke="#FFFFFF" stroke-width="3" opacity="0.5"
+                            stroke-linecap="round" />
+                      <path d="M 310 140 L 288 220 M 340 140 L 318 220" stroke="#FFFFFF" stroke-width="3" opacity="0.5"
+                            stroke-linecap="round" />
+                      <path d="M 465 140 L 443 220 M 495 140 L 473 220" stroke="#FFFFFF" stroke-width="3" opacity="0.5"
+                            stroke-linecap="round" />
+                      <path d="M 590 145 L 578 220" stroke="#FFFFFF" stroke-width="3" opacity="0.5"
+                            stroke-linecap="round" />
+                    </g>
+
+                    <!-- ДЕТАЛИ (Двери, ручки, фары) -->
+                    <g id="van-details">
+                      <!-- Швы дверей -->
+                      <path d="M 432 130 L 432 360" stroke="#263238" stroke-width="1.5" opacity="0.4" />
+                      <path d="M 570 130 L 570 360" stroke="#263238" stroke-width="1.5" opacity="0.4" />
+                      <!-- Дверные ручки -->
+                      <rect x="400" y="260" width="20" height="6" rx="3" fill="#37474F" />
+                      <rect x="540" y="260" width="20" height="6" rx="3" fill="#37474F" />
+
+                      <!-- Передняя фара -->
+                      <path d="M 665 260 C 675 260 680 270 680 285 L 660 285 Z" fill="#FFF9C4" stroke="#FFD54F"
+                            stroke-width="2" />
+                      <!-- Задняя фара -->
+                      <rect x="120" y="260" width="6" height="30" rx="2" fill="#D50000" />
+
+                      <!-- Боковое зеркало заднего вида -->
+                      <path d="M 585 210 L 605 210 L 600 235 L 585 235 Z" fill="#37474F" />
+                      <line x1="575" y1="215" x2="585" y2="215" stroke="#37474F" stroke-width="3" />
+
+                      <!-- Воздухозаборники / решетка сзади -->
+                      <line x1="135" y1="270" x2="135" y2="310" stroke="#006064" stroke-width="3"
+                            stroke-linecap="round" />
+                      <line x1="142" y1="270" x2="142" y2="310" stroke="#006064" stroke-width="3"
+                            stroke-linecap="round" />
+                      <line x1="149" y1="270" x2="149" y2="310" stroke="#006064" stroke-width="3"
+                            stroke-linecap="round" />
+                    </g>
+                  </svg>
+                </div>
+                <div class="flex flex-col margin-left-10 font-size-18">
+                  <div class="flex font-weight-700">Toyota Alphard</div>
+                  <div class="flex margin-top-5">А123АА 65</div>
+                  <div class="flex margin-top-5">Игнатьев Игорь</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex between margin-top-10">
+              <div class="flex text-green font-weight-700">На доставке</div>
+              <div class="flex pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                     fill="#000000">
+                  <path
+                    d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
 
       </div>
 

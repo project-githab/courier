@@ -1,19 +1,34 @@
+
+.transport-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
 @media (min-width: 20em) {
 }
 
 /* Ноутбук 1199px */
 @media (max-width: 74.938em) {
 
+  .transport-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
 }
 
 /* Планшет 991px */
 @media (max-width: 61.938em) {
-  .close-component {
-    display: none;
-  }
+
 }
 
 /* Телефон 767px */
 @media (max-width: 47.938em) {
+
+  .transport-grid {
+    grid-template-columns: 1fr;
+  }
 
 }
